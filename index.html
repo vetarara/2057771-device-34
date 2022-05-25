@@ -175,7 +175,7 @@
         <p class="contacts-in-store">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
         <address class="contacts-address">
-          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p><!--Почему он выделился курсивом при просмотре в браузере?-->
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <h3 class="contacts-subtitle">Время работы</h3>
@@ -184,6 +184,16 @@
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
         <a class="button details" href="#">Напишите нам</a>
+      </section>
+      <section>
+        <h2>Подпишитесь на рассылку</h2> <!--до этого ставила br в таких случаях. это нужно?-->
+        <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <form action="#" method="post">
+          <label for="search" class="visually-hidden">Ваш электорнный адрес</label><!--или можно тут написать "e-mail",
+             несмотря на то, что язык у нас задан ru?-->
+          <input type="text" name="search" id="search">
+          <button type="submit">Найти</button>
+          </form>
       </section>
     </main>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
