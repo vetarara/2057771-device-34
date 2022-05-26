@@ -159,7 +159,38 @@
       </section>
 
       <section>
-      <p>Доставим редкий товар под заказ<p>
+      <h3>Доставим редкий товар под заказ<h3>
+        <form class="delivery" action="#" method="post">
+          <label for="name">Ваше имя:
+            <input class="field" type="text" name="login" id="name" placeholder="Введите имя">
+          </label>
+          <label for="email">Ваш e-mail:
+            <input class="field" placeholder="email@example.com" type="email" name="email" id="email" required>
+          </label>
+          <br>
+          <label for="goods">Что нужно привезти:
+            <input class="field" placeholder="В свободной форме" type="text" name="delivery" id="goods" required>
+          </label>
+          <p>Количество:</p>
+          <ul class="slider-delivery">
+            <li class="slider-delivery-item">
+              <button class="slider-delivery-button" type="button-quantity-less">
+                <span>-</span>
+              </button>
+            </li>
+            <li class="slider-delivery-item">
+              <button class="slider-delivery-button" type="button-quantity">
+                <span>1</span>
+              </button>
+            </li>
+            <li class="slider-delivery-item">
+              <button class="slider-delivery-button" type="button-quantity-more">
+                <span>+</span>
+              </button>
+            </li>
+          </ul>
+          <input type="submit" value="Отправить">
+        </form>
       </section>
       
       <section class="about-us">
@@ -199,8 +230,9 @@
         <h2>Подпишитесь<br>на рассылку</h2>
         <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="newsletter-form" action="#" method="post">
-          <label for="newsletter-email">Email</label>
+          <label for="newsletter-email">Email
           <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+        </label>
           <button class="button newsletter-button" type="submit">Подписаться</button>
           <img src="#" alt="Галочка">
           <p>Это бесплатно</p>
