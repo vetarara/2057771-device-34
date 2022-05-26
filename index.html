@@ -14,10 +14,14 @@
       <button type="submit">Найти</button>
       </form>
       <nav class="header-navigation">
-        <ul class="navigation-user"><!--надо разделить-->
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
           <div><!--содержимое корзины-->
@@ -33,9 +37,13 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог товаров</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
@@ -189,10 +197,12 @@
         <h2>Подпишитесь на рассылку</h2> <!--до этого ставила br в таких случаях. это нужно?-->
         <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form action="#" method="post">
-          <label for="search" class="visually-hidden">Ваш электорнный адрес</label><!--или можно тут написать "e-mail",
+          <label for="subscribe" class="visually-hidden">Ваш электорнный адрес</label><!--или можно тут написать "e-mail",
              несмотря на то, что язык у нас задан ru?-->
-          <input type="text" name="search" id="search">
-          <button type="submit">Найти</button>
+          <input type="text" name="subscribe" id="subscribe">
+          <button type="submit">Подписаться</button>
+          <img src="#" alt="Галочка">
+          <p>Это бесплатно</p>
           </form>
       </section>
     </main>
