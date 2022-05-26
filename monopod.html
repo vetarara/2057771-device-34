@@ -71,7 +71,7 @@
               </header>
 
               <section class="catalog-products">
-                <h2 class="filter">Фильтр:</h2>
+                <h3 class="filter">Фильтр:</h3><!--наверно h4 вообще?-->
                 <form class="catalog-filter" action="#" method="get">
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость</legend>
@@ -132,6 +132,13 @@
                    </fieldset>
                   <button class="button" type="submit">Показать</button>
                 </form>
+
+                <select class="select-control" aria-label="Сортировка">
+                  <h3 class="filter">Сортировка:</h3>
+                  <option value="popular">Популярные</option><!--а какие варианты ещё? не нашла в фигме-->
+                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="expensive">Сначала дорогое</option>
+                </select>
               </section>
 
         </main>
