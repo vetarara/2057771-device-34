@@ -20,7 +20,7 @@
         <nav class="header-navigation">
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
+              <a class="navigation-link" href="#">Войти</a><!--Переделать шапку!!! логин + выйти-->
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Сравнить</a>
@@ -56,7 +56,7 @@
 
         <main class="main-inner">
             <header class="inner-header">
-                <h1 class="inner-header-title">Моноподы для селфи</h1>
+                <h2 class="inner-header-title">Моноподы для селфи</h2>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">
                       <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -65,14 +65,13 @@
                       <a class="breadcrumbs-link" href="#">Каталог товаров</a>
                     </li>
                     <li class="breadcrumbs-item">
-                       <a class="breadcrumbs-link">Моноподы для селфи</a><!--класс navigation-link-current никуда не нужно добавлять, выходит?
-                      сделать span, посмотреть в демке-->
+                       <a class="breadcrumbs-link">Моноподы для селфи</a>
                     </li>
                   </ul>
               </header>
 
               <section class="catalog-products">
-                <h3 class="filter">Фильтр:</h3><!--наверно h4 вообще?-->
+                <h3 class="filter">Фильтр:</h3>
                 <form class="catalog-filter" action="#" method="get">
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость</legend>
@@ -83,7 +82,7 @@
                     
                       <ul class="catalog-filter-list"></ul>
                         <li class="catalog-filter-item">
-                          <label class="control"><!--тут ставила вместо control - color, поменяла-->
+                          <label class="control">
                             <input class="control-input" type="checkbox" name="black" checked>
                              Чёрный
                           </label>
@@ -136,11 +135,11 @@
 
                 <select class="select-control" aria-label="Сортировка">
                   <h3 class="filter">Сортировка:</h3>
-                  <option value="popular">Популярные</option><!--а какие варианты ещё? не нашла в фигме-->
+                  <option value="popular">Популярные</option>
                   <option value="cheap">Сначала дешёвое</option>
                   <option value="expensive">Сначала дорогое</option>
                 </select>
-<!--не поняла суть кнопочек справа от сортировки, пока пропустила-->
+
                 <div class="product-card">
                   <ul class="product-list">
                     <li class="product-card">
@@ -171,9 +170,37 @@
                       <b class="product-card-title" href="#">Селфи-палка «Следуй за мной»</b>
                       <a class="product-card-price" href="#">1 500 ₽</a>
                     </li>
-
-                  
+                  </ul>                  
                 </div>
+
+                <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+                <ul class="pagination">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-prev pagination-disabled">
+                      <span class="button-prev">Назад</span>
+                    </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-next" href="#">
+                      <span class="button-next">Вперёд</span>
+                    </a>
+                  </li>
+                </ul>
               </section>
 
         </main>
