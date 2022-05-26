@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Моноподы для селфи</title>
+    <title>Моноподы для селфи</title><!--назвала так, а не "Каталог", потому что как вижно из макета это страница именно с товаром "Моноподы",
+    на которую перешли из "Каталога товаров". то же видно по хлебным крошкам на этой странице.-->
   </head>
   <body>
     <header class="page-header">
         
         <h1 class="visually-hidden">device</h1>
-        <a class="navigation-logo" href="index.html"><img class="logo" src="" alt="Логотип Device"></a>
+        <a class="navigation-logo" href="index.html"><img class="logo" src="#" alt="Логотип Device"></a>
         
   
         <form action="#" method="post">
@@ -81,12 +82,13 @@
 
               <section class="catalog-products">
                 <h3 class="filter">Фильтр:</h3>
+                <form class="catalog-filter" action="#" method="get">
                 <p>Стоимость</p>
         
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цвет</legend>
                     
-                      <ul class="catalog-filter-list"></ul>
+                      <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                           <label class="control">
                             <input class="control-input" type="checkbox" name="black" checked>
@@ -135,12 +137,12 @@
                           Нет
                       </label>
                     </li>
+                    </ul>
                    </fieldset>
                   <button class="button" type="submit">Показать</button>
                 </form>
 
                 <select class="select-control" aria-label="Сортировка">
-                  <h3 class="filter">Сортировка:</h3>
                   <option value="popular">Популярные</option>
                   <option value="cheap">Сначала дешёвое</option>
                   <option value="expensive">Сначала дорогое</option>
@@ -150,30 +152,30 @@
                   <ul class="product-list">
                     <li class="product-card">
                       <a class="product-card-link" href="product.html">
-                      <img class="product-card-image" src="" alt="Любительская селфи-палка">
+                      <img class="product-card-image" src="#" alt="Любительская селфи-палка">
                       </a>
-                      <b class="product-card-title" href="#">Любительская селфи-палка</b>
+                      <a class="product-card-title" href="#"><b>Любительская селфи-палка</b></a>
                       <a class="product-card-price" href="#">500 ₽</a>
                     </li>
                     <li class="product-card">
                       <a class="product-card-link" href="product.html">
-                      <img class="product-card-image" src="" alt="Профессиональная селфи-палка">
+                      <img class="product-card-image" src="#" alt="Профессиональная селфи-палка">
                       </a>
-                      <b class="product-card-title" href="#">Профессиональная селфи-палка</b>
+                      <a class="product-card-title" href="#"><b>Профессиональная селфи-палка</b></a>
                       <a class="product-card-price" href="#">1 500 ₽</a>
                     </li>
                     <li class="product-card">
                       <a class="product-card-link" href="product.html">
-                      <img class="product-card-image" src="" alt="Непотопляемая селфи-палка">
+                      <img class="product-card-image" src="#" alt="Непотопляемая селфи-палка">
                       </a>
-                      <b class="product-card-title" href="#">Непотопляемая селфи-палка</b>
+                      <a class="product-card-title" href="#"><b>Непотопляемая селфи-палка</b></a>
                       <a class="product-card-price" href="#">2 500 ₽</a>
                     </li>
                     <li class="product-card">
                       <a class="product-card-link" href="product.html">
-                      <img class="product-card-image" src="" alt="Селфи-палка «Следуй за мной»">
+                      <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной»">
                       </a>
-                      <b class="product-card-title" href="#">Селфи-палка «Следуй за мной»</b>
+                      <a class="product-card-title" href="#"><b>Селфи-палка «Следуй за мной»</b></a>
                       <a class="product-card-price" href="#">1 500 ₽</a>
                     </li>
                   </ul>                  
@@ -214,10 +216,10 @@
 
      <footer class="page-footer">
         <h4 class="visually-hidden">device</h4>
-        <img class="logo" src="" alt="Логотип Device">
+        <img class="logo" src="#" alt="Логотип Device">
         <address class="contacts-address">
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          
+        </address>
         <nav class="footer-navigation">
           <ul class="footer-service">
             <li class="footer-service-item">
@@ -231,6 +233,7 @@
             </li>
           </ul>
         </nav>
+        <address class="contacts-address">
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
   
