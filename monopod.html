@@ -82,39 +82,53 @@
                     
                       <ul class="catalog-filter-list"></ul>
                         <li class="catalog-filter-item">
-                          <label class="сolor">
-                            <input class="color-input" type="checkbox" name="black" checked>
+                          <label class="control"><!--тут ставила вместо control - color, поменяла-->
+                            <input class="control-input" type="checkbox" name="black" checked>
                              Чёрный
                           </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <label class="сolor">
-                            <input class="color-input" type="checkbox" name="white" checked>
+                          <label class="control">
+                            <input class="control-input" type="checkbox" name="white" checked>
                             Белый
                           </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <label class="сolor">
-                            <input class="color-input" type="checkbox" name="blue">
+                          <label class="control">
+                            <input class="control-input" type="checkbox" name="blue">
                             Синий
                           </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <label class="сolor">
-                            <input class="color-input" type="checkbox" name="red">
+                          <label class="control">
+                            <input class="control-input" type="checkbox" name="red">
                             Красный
                           </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <label class="сolor">
-                            <input class="color-input" type="checkbox" name="pink">
+                          <label class="control">
+                            <input class="control-input" type="checkbox" name="pink">
                             Розовый
                           </label>
                         </li>
+                      </ul>
                    </fieldset>
 
                    <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Bluetooth</legend>
+                      <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                          <label class="control">
+                            <input class="control-input" type="radio" name="product-group" value="yes" checked>
+                            Есть
+                        </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="control-input" type="radio" name="product-group" value="no">
+                          Нет
+                      </label>
+                    </li>
                    </fieldset>
                   <button class="button" type="submit">Показать</button>
                 </form>
