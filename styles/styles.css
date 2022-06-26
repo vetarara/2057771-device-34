@@ -159,6 +159,7 @@
   .contacts-phone {
     font-style: normal;
     color: #444;
+    text-decoration-line: underline;
   }
 
   h2.subscribe {
@@ -184,6 +185,35 @@
     color: #000;
   }
 
-  p.for-free {
+  .for-free {
     color: #444;
+  }
+
+  .page-footer {
+    background: #444;
+  }
+
+  .contacts-address-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .footer-navigation-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .contacts-phone-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #fff;
   }
