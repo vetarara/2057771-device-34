@@ -19,7 +19,9 @@
     <header class="header">
 
       <h1 class="visually-hidden">Магазин Device</h1>
-      <img src="img/" width="145" height="36" alt="Логотип магазина Device">
+      <a class="logo" href="#">
+        <img src="img/" width="145" height="36" alt="Логотип магазина Device">
+      </a>
       <form action="#" method="post">
         <input type="search" placeholder="Текст поиска">
         <button type="submit">Найти</button> <!-- Точно ли type="submit" ? Какие типы ещё бывают? -->
@@ -123,8 +125,31 @@
         </form>
       </section>
 
-      <section class="product-list">
+      <section>
+        <h2 class="visually-hidden">Сортировка товаров</h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Популярные</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+      </section>
+
+      <section class="products">
         <h2 class="visually-hidden">Товары</h2>
+        <ul class="product-list">
+          <li class="product-card">
+            <a href="#">Любительская<br>селфи-палка</a>
+          </li>
+          <li class="product-card">
+            <a href="#">Профессиональная<br>селфи-палка </a>
+          </li>
+          <li class="product-card">
+            <a href="#">Непотопляемая<br>селфи-палка</a>
+          </li>
+          <li class="product-card">
+            <a href="#">Селфи-палка «Следуй<br>за мной»</a>
+          </li>
+        </ul>
 
       </section>
 
@@ -155,7 +180,9 @@
         <address>
           <a href="tel:"78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
-        <img src="img/" width="115" height="33" alt="Логотип HTML Академии">
+        <a class="logo" href="#">
+          <img src="img/" width="115" height="33" alt="Логотип HTML Академии">
+        </a>
       </div>
     </footer>
   </body>
