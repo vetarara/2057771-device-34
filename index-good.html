@@ -19,10 +19,9 @@
     <header class="main-header">
 
       <h1 class="visually-hidden">Магазин Device</h1>
-      <form>
-        <label for="search">Введите текст для поиска</label>
-        <input type="text" name="search" id="search">
-        <button type="submit">Найти</button>
+      <form action="#" method="post">
+        <input type="search" placeholder="Текст поиска">
+        <button type="submit">Найти</button> <!-- Точно ли type="submit" ? Какие типы ещё бывают? -->
       </form>
 
       <!--Что именно из этого добавить в nav?
@@ -212,6 +211,18 @@
 
         <div>
           <h4>Доставим редкий товар под заказ</h4>
+          <div>
+            <form action="#" method="post">
+              <span>Доставка под заказ</span> <!-- Это название формы, не уверена, что его нужно вводить так, через span-->
+              <label for="rareitem-userame">Ваше имя:</label>
+                <input type="text" name="userame" id="rareitem-userame" placeholder="Введите имя" required>
+              <label for="rareitem-email">Ваш e-mail:</label>
+                <input type="email" name="email" id="rareitem-email" placeholder="Например, example@email.com" required>
+              <label for="rareitem-order">Что нужно привезти:</label>
+                <input type="text" name="order" id="rareitem-order" placeholder="В свободной форме" required>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
 
       </section>
