@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="">
+    <!-- width=device-width: Это указывает браузеру использовать ширину экрана устройства (device-width)
+      в качестве ширины области просмотра (viewport width), что позволяет веб-странице адаптироваться к различным размерам экранов.
+
+      initial-scale=1: Это определяет начальный масштаб отображения веб-страницы.
+      Значение "1" указывает, что страница будет отображаться без изменений масштаба по умолчанию. -->
+      <title>Заголовок страницы</title>
+
+  </head>
+
+  <body>
+
+    <header class="main-header">
+
+      <h1 class="visually-hidden">Магазин Device</h1>
+      <form action="#" method="post">
+        <input type="search" placeholder="Текст поиска">
+        <button type="submit">Найти</button> <!-- Точно ли type="submit" ? Какие типы ещё бывают? -->
+      </form>
+
+      <!--Что именно из этого добавить в nav?
+        форму туда точно не добавляем! -->
+
+      <ul class="authorization">
+        <li>
+          <a href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
+        </li>
+        <li>
+          <a href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как? -->
+        </li>
+      </ul>
+
+      <ul class="compare-basket">
+        <li>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+          <ul>
+            <li>
+              <a href="#">Любительская<br>селфи-палка</a>
+            </li>
+            <li>
+              <a href="#">Любительская<br>селфи-палка</a>
+            </li>
+            <li>Товаров: 2</li>
+            <li>Сумма: 2000 ₽</li>
+            <li>
+              <a href="#">Открыть корзину</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="catalogue">
+        <li class="catalogue-name">
+          <a class="" href="#">Каталог товаров</a>
+            <ul class="catelogue-list">
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для cелфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+
+      <ul class="info">
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+    </header>
+
+    <main>
+
+      <section class="filter">
+        <form action="#" method="get">
+          <fieldset>
+            <!-- Стоимость пока пропускаем!
+            <legend>Стоимость</legend>
+            <label>от</label><input type> -->
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <label><input type="checkbox" name= "area" checked value="Черный">Черный</label>
+            <label><input type="checkbox" name= "area" checked value="Белый">Белый</label>
+            <label><input type="checkbox" name= "area" value="Синий">Синий</label>
+            <label><input type="checkbox" name= "area" value="Красный">Красный</label>
+            <label><input type="checkbox" name= "area" value="Розовый">Розовый</label>
+          </fieldset>
+          <fieldset>
+            <!-- bluetooth также пока пропускаем -->
+          </fieldset>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Наши контакты, условия доставки и гарантия</h2>
+
+      <ul class="links">
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
