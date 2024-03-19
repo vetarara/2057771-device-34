@@ -23,7 +23,7 @@
       </a>
       <form action="#" method="post">
         <input type="search" placeholder="Текст поиска">
-        <button type="submit">Найти</button> <!-- Точно ли type="submit" ? Какие типы ещё бывают? -->
+        <button type="button">Найти</button> <!-- Какие типы ещё бывают:  button | reset | submit -->
       </form>
 
       <!--Что именно из этого добавить в nav?
@@ -281,12 +281,14 @@
         </section>
       </div>
 
-      <section>
-        <h3>Подпишитесь<br>на рассылку</h3>
-        <p>Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
-
-        <span>Это бесплатно</span>
-
+      <section class="subscription">
+        <h3 class="subscription-title">Подпишитесь<br>на рассылку</h3>
+        <p class="subscription-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
+        <form action="#" method="post">
+          <input type="email" placeholder="Ваш e-mail">
+          <button type="submit">Найти</button>
+        </form>
+        <span class="subscription-advantage">Это бесплатно</span>
       </section>
 
     </main>
