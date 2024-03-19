@@ -28,75 +28,79 @@
 
       <!--Что именно из этого добавить в nav?
         форму туда точно не добавляем! -->
+      <nav class="navigation">
+        <ul class="navigation-list authorization">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как?
+            и вообще, скорее всего, именно выйти - это кнопка. но не факт:
+           1. Если клик по ней должен открывать окно для ввода регистрационных данных на этой же странице, это кнопка.
+           2. Если при нажатии должна открываться отдельная страница для входа, это ссылка.-->
+          </li>
+        </ul>
 
-      <ul class="authorization">
-        <li>
-          <a href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
-        </li>
-        <li>
-          <a href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как? -->
-        </li>
-      </ul>
-
-      <ul class="compare-basket">
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-          <ul>
-            <li>
-              <a href="#">Любительская<br>селфи-палка</a>
-            </li>
-            <li>
-              <a href="#">Любительская<br>селфи-палка</a>
-            </li>
-            <li>Товаров: 2</li>
-            <li>Сумма: 2000 ₽</li>
-            <li>
-              <a href="#">Открыть корзину</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-
-      <ul class="catalogue">
-        <li class="catalogue-name">
-          <a class="" href="#">Каталог товаров</a>
-            <ul class="catelogue-list">
-              <li>
-                <a href="#">Виртуальная реальность</a>
+        <ul class="navigation-list compare-cart">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Корзина</a>
+            <ul class="cart-list">
+              <li class="cart-item">
+                <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
               </li>
-              <li>
-                <a href="#">Моноподы для cелфи</a>
+              <li class="cart-item">
+                <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
               </li>
-              <li>
-                <a href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-              <li>
-                <a href="#">Квадрокоптеры</a>
+              <li class="cart-item">Товаров: 2</li>
+              <li class="cart-item">Сумма: 2000 ₽</li>
+              <li class="cart-item">
+                <a class="cart-link" href="#">Открыть корзину</a>
               </li>
             </ul>
-        </li>
-      </ul>
+          </li>
+        </ul>
 
-      <ul class="info">
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Гарантия</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
+        <ul class="navigation-list catalogue">
+          <li class="catalogue-name">
+            <a class="catalogue-link" href="#">Каталог товаров</a> <!-- Это кнопка, а не ссылка! -->
+              <ul class="catelogue-list">
+                <li class="catelogue-item">
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li class="catelogue-item">
+                  <a class="catelogue-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="catelogue-item">
+                  <a class="catelogue-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="catelogue-item">
+                  <a class="catelogue-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catelogue-item">
+                  <a class="catelogue-link" href="#">Умные часы</a>
+                </li>
+                <li class="catelogue-item">
+                  <a class="catelogue-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+
+        <ul class="navigation-list info">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
     </header>
 
@@ -109,8 +113,8 @@
 
         <figure>
           <figcaption class="visually-hidden">Квадрокоптер</figcaption>
-          <img src="img/" width="560" height="560" alt="Чёрно-белый квадрокоптер">
-          <b>Порхает как бабочка,<br>жалит как пчела!</b>
+          <img src="img/" width="560" height="560" alt="Чёрно-белый квадрокоптер с лазером">
+          <p><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="" href="#">Подробнее</a>
           <table>
@@ -128,7 +132,7 @@
         <figure>
           <figcaption class="visually-hidden">Фитнес-браслет</figcaption>
           <img src="img/" width="560" height="560" alt="Чёрный фитнес-браслет с надписью: Я вижу, что ты снова ешь :(">
-          <b>Худеем<br>правильно!</b>
+          <p><b>Худеем<br>правильно!</b></p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе<br>силы не пропускать занятия и соблюдать диету.</p>
           <a class="" href="#">Подробнее</a>
           <table>
@@ -144,7 +148,7 @@
         <figure>
           <figcaption class="visually-hidden">Длинная селфи-палка</figcaption>
           <img src="img/" width="560" height="560" alt="Три чёрные селфи-палки с синими элементами">
-          <b>Делай селфи,<br>как Бен Стиллер!</b>
+          <p><b>Делай селфи,<br>как Бен Стиллер!</b></p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="" href="#">Подробнее</a>
           <table>
