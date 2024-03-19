@@ -17,88 +17,85 @@
       </a>
       <form action="#" method="post">
         <input type="search" placeholder="Текст поиска">
-        <button type="submit">Найти</button> <!-- Точно ли type="submit" ? Какие типы ещё бывают? -->
+        <button type="button">Найти</button>
       </form>
 
-      <!--Что именно из этого добавить в nav?
-        форму туда точно не добавляем! -->
+      <nav class="navigation">
+        <ul class="navigation-authorization-list">
+          <li class="navigation-authorization-item">
+            <a class="navigation-authorization-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
+          </li>
+          <li class="navigation-authorization-item">
+            <a class="navigation-authorization-link" href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как?
+            и вообще, скорее всего, именно выйти - это кнопка. но не факт:
+           1. Если клик по ней должен открывать окно для ввода регистрационных данных на этой же странице, это кнопка.
+           2. Если при нажатии должна открываться отдельная страница для входа, это ссылка.-->
+          </li>
+        </ul>
 
-        <nav class="navigation">
-          <ul class="navigation-authorization-list">
-            <li class="navigation-authorization-item">
-              <a class="navigation-authorization-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
-            </li>
-            <li class="navigation-authorization-item">
-              <a class="navigation-authorization-link" href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как?
-              и вообще, скорее всего, именно выйти - это кнопка. но не факт:
-             1. Если клик по ней должен открывать окно для ввода регистрационных данных на этой же странице, это кнопка.
-             2. Если при нажатии должна открываться отдельная страница для входа, это ссылка.-->
-            </li>
-          </ul>
+        <ul class="navigation-user-list">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Корзина</a>
+            <ul class="cart-list">
+              <li class="cart-item">
+                <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+              </li>
+              <li class="cart-item">
+                <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+              </li>
+              <li class="cart-item">
+                <span class="cart-quantity">Товаров: 2</span>
+                <span class="cart-amount">Сумма: 2000 ₽</span>
+              </li>
+              <li class="cart-item">
+                <a class="cart-link" href="#">Открыть корзину</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
-          <ul class="navigation-user-list">
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Корзина</a>
-              <ul class="cart-list">
-                <li class="cart-item">
-                  <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+        <ul class="navigation-catalogue-list">
+          <li class="navigation-catalogue-name">
+            <a class="navigation-catalogue-link" href="#">Каталог товаров</a> <!-- Это кнопка, а не ссылка! -->
+              <ul class="navigation-catalogue-list">
+                <li class="navigation-catalogue-item">
+                  <a class="navigation-catalogue-link" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="cart-item">
-                  <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+                <li class="navigation-catalogue-item">
+                  <a class="navigation-catalogue-link" href="#">Моноподы для cелфи</a>
                 </li>
-                <li class="cart-item">
-                  <span class="cart-quantity">Товаров: 2</span>
-                  <span class="cart-amount">Сумма: 2000 ₽</span>
+                <li class="navigation-catalogue-item">
+                  <a class="navigation-catalogue-link" href="#">Экшн-камеры</a>
                 </li>
-                <li class="cart-item">
-                  <a class="cart-link" href="#">Открыть корзину</a>
+                <li class="navigation-catalogue-item">
+                  <a class="navigation-catalogue-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="navigation-catalogue-item">
+                  <a class="navigation-catalogue-link" href="#">Умные часы</a>
+                </li>
+                <li class="navigation-catalogue-item">
+                  <a class="navigation-catalogue-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
-            </li>
-          </ul>
+          </li>
+        </ul>
 
-          <ul class="navigation-catalogue-list">
-            <li class="navigation-catalogue-name">
-              <a class="navigation-catalogue-link" href="#">Каталог товаров</a> <!-- Это кнопка, а не ссылка! -->
-                <ul class="navigation-catalogue-list">
-                  <li class="navigation-catalogue-item">
-                    <a class="navigation-catalogue-link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="navigation-catalogue-item">
-                    <a class="navigation-catalogue-link" href="#">Моноподы для cелфи</a>
-                  </li>
-                  <li class="navigation-catalogue-item">
-                    <a class="navigation-catalogue-link" href="#">Экшн-камеры</a>
-                  </li>
-                  <li class="navigation-catalogue-item">
-                    <a class="navigation-catalogue-link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="navigation-catalogue-item">
-                    <a class="navigation-catalogue-link" href="#">Умные часы</a>
-                  </li>
-                  <li class="navigation-catalogue-item">
-                    <a class="navigation-catalogue-link" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-            </li>
-          </ul>
-
-          <ul class="navigation-info-list">
-            <li class="navigation-info-item">
-              <a class="navigation-info-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-info-item">
-              <a class="navigation-info-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-info-item">
-              <a class="navigation-info-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-     </header>
+        <ul class="navigation-info-list">
+          <li class="navigation-info-item">
+            <a class="navigation-info-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-info-item">
+            <a class="navigation-info-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-info-item">
+            <a class="navigation-info-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
 
@@ -133,24 +130,24 @@
         </select>
       </section>
 
-      <section class="products">
+      <section class="product">
         <h2 class="visually-hidden">Товары</h2>
         <ol class="product-list"> <!-- очерёдность здесь важна, т.к. товары сортируются по определённому признаку -->
           <li class="product-card">
             <img src="img/" width="360" height="380" alt="Селфи-палка с прикреплённым к ней телефоном">
-            <a href="#">Любительская<br>селфи-палка</a>
+            <a class="product-link" href="#">Любительская<br>селфи-палка</a>
           </li>
           <li class="product-card">
             <img src="img/" width="360" height="380" alt="Собранная селфи-палка">
-            <a href="#">Профессиональная<br>селфи-палка </a>
+            <a class="product-link" href="#">Профессиональная<br>селфи-палка </a>
           </li>
           <li class="product-card">
             <img src="img/" width="360" height="380" alt="Чёрная селфи-палка с жёлтыми элементами и прикреплённой к ней камерой GoPro">
-            <a href="#">Непотопляемая<br>селфи-палка</a>
+            <a class="product-link" href="#">Непотопляемая<br>селфи-палка</a>
           </li>
           <li class="product-card">
             <img src="img/" width="360" height="380" alt="Селфи-палка в форме руки">
-            <a href="#">Селфи-палка «Следуй<br>за мной»</a>
+            <a class="product-link" href="#">Селфи-палка «Следуй<br>за мной»</a>
           </li>
         </ol>
 
