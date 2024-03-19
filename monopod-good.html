@@ -23,76 +23,80 @@
       <!--Что именно из этого добавить в nav?
         форму туда точно не добавляем! -->
 
-      <ul class="authorization">
-        <li>
-          <a href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
-        </li>
-        <li>
-          <a href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как? -->
-        </li>
-      </ul>
-
-      <ul class="compare-basket">
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-          <ul>
-            <li>
-              <a href="#">Любительская<br>селфи-палка</a>
+        <nav class="navigation">
+          <ul class="navigation-authorization-list">
+            <li class="navigation-authorization-item">
+              <a class="navigation-authorization-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
             </li>
-            <li>
-              <a href="#">Любительская<br>селфи-палка</a>
-            </li>
-            <li>Товаров: 2</li>
-            <li>Сумма: 2000 ₽</li>
-            <li>
-              <a href="#">Открыть корзину</a>
+            <li class="navigation-authorization-item">
+              <a class="navigation-authorization-link" href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как?
+              и вообще, скорее всего, именно выйти - это кнопка. но не факт:
+             1. Если клик по ней должен открывать окно для ввода регистрационных данных на этой же странице, это кнопка.
+             2. Если при нажатии должна открываться отдельная страница для входа, это ссылка.-->
             </li>
           </ul>
-        </li>
-      </ul>
 
-      <ul class="catalogue">
-        <li class="catalogue-name">
-          <a class="" href="#">Каталог товаров</a>
-            <ul class="catelogue-list">
-              <li>
-                <a href="#">Виртуальная реальность</a>
-              </li>
-              <li>
-                <a href="#">Моноподы для cелфи</a>
-              </li>
-              <li>
-                <a href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-              <li>
-                <a href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-        </li>
-      </ul>
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+                </li>
+                <li class="cart-item">Товаров: 2</li>
+                <li class="cart-item">Сумма: 2000 ₽</li>
+                <li class="cart-item">
+                  <a class="cart-link" href="#">Открыть корзину</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-      <ul class="info">
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Гарантия</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
+          <ul class="navigation-catalogue-list">
+            <li class="navigation-catalogue-name">
+              <a class="navigation-catalogue-link" href="#">Каталог товаров</a> <!-- Это кнопка, а не ссылка! -->
+                <ul class="navigation-catalogue-list">
+                  <li class="navigation-catalogue-item">
+                    <a class="navigation-catalogue-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="navigation-catalogue-item">
+                    <a class="navigation-catalogue-link" href="#">Моноподы для cелфи</a>
+                  </li>
+                  <li class="navigation-catalogue-item">
+                    <a class="navigation-catalogue-link" href="#">Экшн-камеры</a>
+                  </li>
+                  <li class="navigation-catalogue-item">
+                    <a class="navigation-catalogue-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="navigation-catalogue-item">
+                    <a class="navigation-catalogue-link" href="#">Умные часы</a>
+                  </li>
+                  <li class="navigation-catalogue-item">
+                    <a class="navigation-catalogue-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+            </li>
+          </ul>
 
-    </header>
+          <ul class="navigation-info-list">
+            <li class="navigation-info-item">
+              <a class="navigation-info-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-info-item">
+              <a class="navigation-info-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-info-item">
+              <a class="navigation-info-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+     </header>
 
     <main>
 
