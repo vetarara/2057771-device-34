@@ -97,7 +97,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main">
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -199,54 +199,67 @@
     </main>
 
     <footer class="footer">
-      <h2 class="visually-hidden">Наши контакты, условия доставки и гарантия</h2>
-      <a href="index-good.html">
-        <img src="img/" width="145" height="36" alt="Логотип интернет-магазина "Device".">
-      </a>
-      <div сlass="physical-adress">
-        <address>Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</address>
-      </div>
+      <section class="footer-physical-address">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <a href="#tothetop">
+          <img src="img/" width="145" height="36" alt="Логотип интернет-магазина "Device".">
+        </a>
+        <address class="footer-contact-address">
+          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </address>
+      </section>
 
-      <div class="footer-navigation">
-        <ul class="links">
-          <li>
-            <a href="#">Доставка</a>
+
+      <section class="footer-navigation">
+        <h2 class="visually-hidden">Условия доставки, гарантии и наши контакты</h2>
+        <ul class="footer-service-list">
+          <li class="footer-service-item">
+            <a class="footer-service-link" href="#">Доставка</a>
           </li>
-          <li>
-            <a href="#">Гарантия</a>
+          <li class="footer-service-item">
+            <a class="footer-service-link" href="#">Гарантия</a>
           </li>
-          <li>
-            <a href="#">Контакты</a>
+          <li class="footer-service-item">
+            <a class="footer-service-link" href="#">Контакты</a>
           </li>
         </ul>
 
-        <ul class="social-links">
-          <li>
-            <a href="#" class="social-links-item">
+        <ul class="footer-social"> <!--Иконки соцюсетей - и декоративные, и контентные.
+        Поэтому тут нужен комплексный подход:
+        1. внутри ссылки обязательно прописывается поясняющий текст - есть
+        2. Изображение на этих кнопках-ссылках декоративные (прописываются через CSS, background-image для ссылки)
+        3.Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden. - есть
+        Таким образом, при потере CSS-файла, изображение пропадёт, а текст ссылки появится.
+        При нормальной работе сайта пользователь увидит лишь изображение.
+        Также необходимо не забывать про доступность — так как в разметке мы прописываем текст ссылки,
+        то при чтении сайта скринридером, ссылки будут озвучены. -->
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
-          <li>
-            <a href="#" class="social-links-item">
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
-          <li>
-            <a href="#" class="social-links-item">
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div class="contact-number">
-        <address>
+      <section class="footer-contact-number">
+        <h2 class="visually-hidden">Контактный номер телефона</h2>
+        <address class="footer-contact-number">
           <a href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img src="img/" width="115" height="33" alt="Логотип HTML Академии">
         </a>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
