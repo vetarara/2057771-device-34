@@ -11,7 +11,7 @@
 
     <header class="header">
 
-      <h1 class="visually-hidden">Магазин Device</h1>
+      <h2 class="visually-hidden">Магазин Device</h2>
       <a class="logo" href="index-good.html">
         <img src="img/" width="145" height="36" alt="Логотип интернет-магазина "Device".">
       </a>
@@ -65,7 +65,7 @@
                   <a class="navigation-catalogue-link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="navigation-catalogue-item">
-                  <a class="navigation-catalogue-link" href="#">Моноподы для cелфи</a>
+                  <a class="navigation-catalogue-link navigation-catalogue-link-current" href="#">Моноподы для cелфи</a>
                 </li>
                 <li class="navigation-catalogue-item">
                   <a class="navigation-catalogue-link" href="#">Экшн-камеры</a>
@@ -97,28 +97,88 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+      </header>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index-good.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Моноподы для селфи</a> <!-- У последней ссылки в списке отсутствует атрибут href -->
+        </li>
+      </ul>
 
-      <section class="filter">
+      <section class="catalog-products">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="#" method="get">
-          <fieldset>
-            <legend>Стоимость</legend>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <!--<fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость</legend>
             <meter value="0" max="7500" high="5000" title="от 0 до 5000">от 0 до 5000</meter>
-            <!-- либо есть вариации работы с тегом meter, либо он тут не подходит-->
+            либо есть вариации работы с тегом meter, либо он тут не подходит
             <label>от</label><input type>
+          </fieldset>-->
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цвет</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="black" checked>
+                  Черный
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input  class="control-input" type="checkbox" name="white" checked>
+                  Белый
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="blue">
+                  Синий
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="red">
+                  Красный
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
-            <label><input type="checkbox" name= "area" checked value="Черный">Черный</label>
-            <label><input type="checkbox" name= "area" checked value="Белый">Белый</label>
-            <label><input type="checkbox" name= "area" value="Синий">Синий</label>
-            <label><input type="checkbox" name= "area" value="Красный">Красный</label>
-            <label><input type="checkbox" name= "area" value="Розовый">Розовый</label>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-bluetooth" value="yes" checked>
+                  <!-- У радио-кнопок почему-то появился атрибут value, и поменялся name -->
+                  Есть
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-bluetooth" value="no">
+                  Нет
+                </label>
+              </li>
+            </ul>
+
           </fieldset>
-          <fieldset>
-            <!-- bluetooth также пока пропускаем -->
-          </fieldset>
+          <button class="button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -201,7 +261,7 @@
     <footer class="footer">
       <section class="footer-physical-address">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <a href="#tothetop">
+        <a href="index-good.html">
           <img src="img/" width="145" height="36" alt="Логотип интернет-магазина "Device".">
         </a>
         <address class="footer-contact-address">
