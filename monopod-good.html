@@ -182,37 +182,51 @@
         </form>
       </section>
 
-      <section>
+      <section class="select">
         <h2 class="visually-hidden">Сортировка товаров</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
+        <a href="#" class="button-up">
+          <span class="visually-hidden">Вверх</span>
+        </a>
+        <a href="#" class="button-down">
+          <span class="visually-hidden">Вниз</span>
+        </a>
       </section>
 
       <section class="product">
         <h2 class="visually-hidden">Товары</h2>
         <ol class="product-list"> <!-- очерёдность здесь важна, т.к. товары сортируются по определённому признаку -->
           <li class="product-card">
-            <img src="img/" width="360" height="380" alt="Селфи-палка с прикреплённым к ней телефоном">
-            <a class="product-card-link" href="#"><b>Любительская<br>селфи-палка</b></a>
-            <a class="product-card-price" href="#">500 ₽</a>
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="img/" width="360" height="380" alt="Селфи-палка с прикреплённым к ней телефоном">
+              <h3 class="product-card-title">Любительская<br>селфи-палка</h3>
+              <span class="product-card-price" href="#">500 ₽</span>
+          </a>
           </li>
           <li class="product-card">
-            <img src="img/" width="360" height="380" alt="Собранная селфи-палка">
-            <a class="product-card-link" href="#"><b>Профессиональная<br>селфи-палка</b></a>
-            <a class="product-card-price" href="#">1 500 ₽</a>
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="img/" width="360" height="380" alt="Собранная селфи-палка">
+              <h3 class="product-card-title">Профессиональная<br>селфи-палка</h3>
+              <span class="product-card-price" href="#">1 500 ₽</span>
+            </a>
           </li>
           <li class="product-card">
-            <img src="img/" width="360" height="380" alt="Чёрная селфи-палка с жёлтыми элементами и прикреплённой к ней камерой GoPro">
-            <a class="product-link" href="#"><b>Непотопляемая<br>селфи-палка</b></a>
-            <a class="product-card-price" href="#">2 500 ₽</a>
+            <a class="product-link" href="#"></a>
+              <img class="product-card-image" src="img/" width="360" height="380" alt="Чёрная селфи-палка с жёлтыми элементами и прикреплённой к ней камерой GoPro">
+              <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
+              <span class="product-card-price" href="#">2 500 ₽</span>
+            </a>
           </li>
           <li class="product-card">
-            <img src="img/" width="360" height="380" alt="Селфи-палка в форме руки">
-            <a class="product-card-link" href="#"><b>Селфи-палка «Следуй<br>за мной»</b></a>
-            <a class="product-card-price" href="#">1 500 ₽</a>
+            <a class="product-link" href="#">
+              <img class="product-card-image" src="img/" width="360" height="380" alt="Селфи-палка в форме руки">
+              <h3 class="product-card-title">Селфи-палка «Следуй<br>за мной»</h3>
+              <span class="product-card-price" href="#">1 500 ₽</span>
+            </a>
           </li>
         </ol>
 
