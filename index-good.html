@@ -222,21 +222,27 @@
         </div>
 
 
-        <div>
+        <div class="rare-preview">
           <h3 class="visually-hidden">Доставим редкий товар под заказ</h3>
           <a href="">Доставим редкий товар под заказ</a> <!-- Это ссыдка.
             В случае, когда сработает JavaScript, откроется попап для заполнения формы.
             В противном случае пользователя можно перекинуть на отдельную страницу с данной формой. -->
-          <div class="modal">
-            <form action="#" method="post">
-              <h4>Доставка под заказ</h4>
-              <label for="rareitem-userame">Ваше имя:</label>
-                <input type="text" name="userame" id="rareitem-userame" placeholder="Введите имя" required>
-              <label for="rareitem-email">Ваш e-mail:</label>
-                <input type="email" name="email" id="rareitem-email" placeholder="Например, example@email.com" required>
-              <label for="rareitem-order">Что нужно привезти:</label>
-                <input type="text" name="order" id="rareitem-order" placeholder="В свободной форме" required>
-              <button type="submit">Отправить</button>
+          <div class="rare">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <h4 class="rare-title">Доставка под заказ</h4>
+              <p class="rare-form-data">
+                <label for="rare-userame">Ваше имя:</label>
+                <input type="text" name="userame" id="rare-userame" placeholder="Введите имя" required>
+              </p>
+              <p class="rare-form-data">
+                <label for="rare-email">Ваш e-mail:</label>
+                <input type="email" name="email" id="rare-email" placeholder="Например, example@email.com" required>
+              </p>
+              <p class="rare-form-data">
+                <label for="rare-order">Что нужно привезти:</label>
+                <input type="text" name="order" id="rare-order" placeholder="В свободной форме" required>
+              </p>
+              <button class="button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -296,9 +302,9 @@
       <section class="subscription">
         <h3 class="subscription-title">Подпишитесь<br>на рассылку</h3>
         <p class="subscription-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
-        <form action="#" method="post">
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" placeholder="Ваш e-mail">
-          <button type="submit">Найти</button>
+          <button class="subscription-button" type="submit">Подписаться</button>
         </form>
         <span class="subscription-advantage">Это бесплатно</span>
       </section>
