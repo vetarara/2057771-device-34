@@ -104,7 +104,8 @@
         <form action="#" method="get">
           <fieldset>
             <legend>Стоимость</legend>
-            <meter value="0" max="7500" high="5000" title="от 0 до 5000">от 0 до 5000</meter> <!-- либо есть вариации работы с этим тегом, либо он тут не подходит-->
+            <meter value="0" max="7500" high="5000" title="от 0 до 5000">от 0 до 5000</meter>
+            <!-- либо есть вариации работы с тегом meter, либо он тут не подходит-->
             <label>от</label><input type>
           </fieldset>
           <fieldset>
@@ -151,6 +152,44 @@
           </li>
         </ol>
 
+        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+        <ol class="pagination">
+          <li class="pagination-item">
+            <button class="pagination-button pagination-prev pagination-disabled" type="button">
+              Назад
+            </button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button pagination-current" type="button">
+              1
+            </button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button" type="button">
+              2
+            </button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button" type="button">
+              3
+            </button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button" type="button">
+              ...
+            </button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button" type="button">
+              15
+            </button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button pagination-next" type="button">
+              Вперёд
+            </button>
+          </li>
+        </ol>
       </section>
 
     </main>
