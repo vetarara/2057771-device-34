@@ -1,1 +1,31 @@
+@font-face {
+  font-family: "Rubik"; /*объявление шрифта*/
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /*для шрифта не задаётся период блокировки совсем и задаётся бесконечный период подмены: сразу будет показан безопасный шрифт, если он определён.
+  другие значения: auto, block, fallback, optional*/
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif; /*если долго не загружается декоративный шрифт, то браузер покажет любой системный шрифт без засечек*/
+  font-size: 18px; /*базовые размеры текста для всего проекта*/
+  line-height: 30px; /*базовая величина пространства между строками в тексте для всего проекта*/
+}
 
