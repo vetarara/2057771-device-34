@@ -291,6 +291,10 @@ body { /*список css-правил*/
 }
 
 /*пагинация*/
+.pagination {
+  background-color: #ebebeb;
+}
+
 .pagination-show-more {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
