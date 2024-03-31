@@ -42,7 +42,8 @@ body { /*список css-правил*/
 }
 
 /*шапка. модальное окно с корзиной пока не стилизую.*/
-.main-header {
+.main-header,
+.inner-header {
   background-color: #ffe17f;
 }
 
@@ -204,7 +205,8 @@ body { /*список css-правил*/
 }
 
 /*футер*/
-.main-footer {
+.main-footer,
+.inner-footer {
   background-color: #444444;
   color: #ffffff;
   font-size: 16px;
@@ -229,3 +231,87 @@ body { /*список css-правил*/
   color: inherit;
   font-style: normal;
 }
+
+/*внутренняя страница: моноподы для селфи*/
+.inner-main {
+  background-color: #f0f0f0;
+}
+
+.inner-header-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-filter-title,
+.select-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/*фильтр*/
+.catalog-filter-group-title {
+ line-height: 20px;
+ font-weight: 700;
+}
+
+.control-input { /*эти стили, если их прописывать для инпут, не вступают в силу... пока пропущу формы фильтров*/
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/*карточки товаров*/
+.product {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.product-card-price {
+  line-height: 21px;
+  text-align: right;
+  color:#444444;
+  font-weight: normal;
+}
+
+/*пагинация*/
+.pagination-show-more {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link-text {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+}
+
+
+

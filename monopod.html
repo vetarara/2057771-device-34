@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Девайс, моноподы</title>
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
 
-    <header class="header">
+    <header class="inner-header">
       <h2 class="visually-hidden">Магазин Device</h2>
       <a class="logo" href="index.html">
         <img class="logo-header" src="images/header/logo.svg" width="145" height="36" alt="Интернет-магазин "Device".">
@@ -98,8 +98,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
-      <header class="inner-header">
+    <main class="inner-main">
+      <header class="inner-title">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
       </header>
       <ul class="breadcrumbs">
@@ -115,9 +115,9 @@
       </ul>
 
       <section class="catalog-products">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h2 class="catalog-filter-title">Фильтр</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <!--<fieldset class="catalog-filter-group">
+          <!--<fieldset class="catalog-filter-group-title">
             <legend class="catalog-filter-title">Стоимость</legend>
             <meter value="0" max="7500" high="5000" title="от 0 до 5000">от 0 до 5000</meter>
             либо есть вариации работы с тегом meter, либо он тут не подходит
@@ -125,7 +125,7 @@
           </fieldset>-->
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цвет</legend>
+            <legend class="catalog-filter-group-title">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -161,7 +161,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
+            <legend class="catalog-filter-group-title">Bluetooth</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -184,7 +184,7 @@
       </section>
 
       <section class="select">
-        <h2 class="visually-hidden">Сортировка товаров</h2>
+        <h2 class="select-title">Сортировка</h2>
         <select class="select-control">
           <option value="popular">Популярные</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -216,14 +216,14 @@
             </a>
           </li>
           <li class="product-card">
-            <a class="product-link" href="#"></a>
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/monopods/monopod-unsinkable.jpg" width="360" height="380" alt="Чёрная селфи-палка с жёлтыми элементами и прикреплённой к ней камерой GoPro">
               <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
               <b class="product-card-price" href="#">2 500 ₽</b>
             </a>
           </li>
           <li class="product-card">
-            <a class="product-link" href="#">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/monopods/monopod-follow-me.jpg" width="360" height="380" alt="Селфи-палка в форме руки">
               <h3 class="product-card-title">Селфи-палка «Следуй<br>за мной»</h3>
               <b class="product-card-price" href="#">1 500 ₽</b>
@@ -231,10 +231,10 @@
           </li>
         </ol>
 
-        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+        <button class="pagination-show-more" type="button">Загрузить ещё</button>
         <ol class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
+            <a class="pagination-link-text pagination-prev pagination-disabled">Назад</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -252,14 +252,14 @@
             <a class="pagination-link">15</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next">Вперёд</a>
+            <a class="pagination-link-text pagination-next">Вперёд</a>
           </li>
         </ol>
       </section>
 
     </main>
 
-    <footer class="footer">
+    <footer class="inner-footer">
       <section class="footer-physical-address">
         <h2 class="visually-hidden">Наш адрес</h2>
         <a href="index.html">
