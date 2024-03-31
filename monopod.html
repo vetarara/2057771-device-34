@@ -4,22 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Девайс, моноподы</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="#">
   </head>
 
   <body>
 
     <header class="header">
-
       <h2 class="visually-hidden">Магазин Device</h2>
       <a class="logo" href="index.html">
         <img class="logo-header" src="images/header/logo.svg" width="145" height="36" alt="Интернет-магазин "Device".">
       </a>
       <form action="#" method="post">
         <label class="visually-hidden">
-          <input type="search" placeholder="Текст поиска">
+          <input class="search-input" type="search" placeholder="Текст поиска">
         </label>
-        <button type="button">Найти</button>
+        <button class="search-button" type="button">Найти</button>
       </form>
 
       <nav class="navigation">
@@ -60,8 +59,8 @@
         </ul>
 
         <ul class="navigation-catalogue-list">
-          <li class="navigation-catalogue-name">
-            <a class="navigation-catalogue-link" href="#">Каталог товаров</a> <!-- Это кнопка, а не ссылка! -->
+          <li>
+            <button class="navigation-catalogue-open" type="button">Каталог товаров</button> <!-- Это кнопка, а не ссылка! -->
               <ul class="navigation-catalogue-list">
                 <li class="navigation-catalogue-item">
                   <a class="navigation-catalogue-link" href="#">Виртуальная реальность</a>
@@ -267,7 +266,7 @@
           <img img class="logo-footer" src="images/footer/logo.svg" width="145" height="36" alt="Логотип интернет-магазина "Device".">
         </a>
         <address class="footer-contact-address">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </section>
 
@@ -316,7 +315,7 @@
       <section class="footer-contact-number">
         <h2 class="visually-hidden">Контактный номер телефона</h2>
         <address class="footer-contact-number">
-          <a href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="footer-contact-number-link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="logo-htmlacademy" src="images/footer/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Академии">

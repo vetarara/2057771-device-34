@@ -32,6 +32,15 @@ body { /*список css-правил*/
   background-color: #ffffff;
 }
 
+.button {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /*шапка. модальное окно с корзиной пока не стилизую.*/
 .main-header {
   background-color: #ffe17f;
@@ -126,27 +135,9 @@ body { /*список css-правил*/
   line-height: 50px;
 }
 
-.service-button { /*это стиль для текущей кнопки! стиль для неактивной кнопки надо написать!*/
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  background-color: #000000;
-  color: #ffe17f;
-  text-transform: uppercase;
-}
-
 .service-description {
   color: #444444;
 }
-
-/*это стиль для неактивной кнопки
-.service-button {
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  background-color: #ffe17f;
-  color: #000000;
-  text-transform: uppercase;
-}
-*/
 
 /*Доставка на заказ*/
 .rare-delivery { /*тут ещё должен быть, возможно, letter-spacing, но я пока не понимаю, как задать корректное значение*/
@@ -176,16 +167,6 @@ body { /*список css-правил*/
   line-height: 20px;
   text-decoration: none;
   color: #000000;
-}
-
-.button-more,
-.button-connection {
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  background-color: #ffe17f;
-  text-decoration: none;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .about-contacts-connection,
