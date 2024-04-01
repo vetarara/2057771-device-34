@@ -75,6 +75,28 @@ body { /*список css-правил*/
   letter-spacing: 0.2em;
 }
 
+.cart-item-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+/*возможно, правила выше и ниже можно задать для всего блока раскрытой корзины. посмотрим. */
+.cart-quantity,
+.cart-amount {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.cart-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
 .navigation-info-link {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
@@ -155,6 +177,18 @@ body { /*список css-правил*/
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.2em;
+}
+
+.rare-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.rare-data {
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 /*о нас*/

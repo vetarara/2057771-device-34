@@ -44,10 +44,10 @@
             если это ссылка, то при наведении на неё открывается выпадающее меню -->
             <ul class="cart-list">
               <li class="cart-item">
-                <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+                <a class="cart-item-link" href="#">Любительская<br>селфи-палка</a>
               </li>
               <li class="cart-item">
-                <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+                <a class="cart-item-link" href="#">Любительская<br>селфи-палка</a>
               </li>
               <li class="cart-item">
                 <span class="cart-quantity">Товаров: 2</span>
@@ -229,17 +229,18 @@
           <form class="rare-form" action="https://echo.htmlacademy.ru/" method="post">
             <h4 class="rare-title">Доставка под заказ</h4>
             <p class="rare-form-data">
-              <label for="rare-userame">Ваше имя:</label>
+              <label class="rare-data" for="rare-userame">Ваше имя:</label>
               <input type="text" name="userame" id="rare-userame" placeholder="Введите имя" required>
             </p>
             <p class="rare-form-data">
-              <label for="rare-email">Ваш e-mail:</label>
+              <label class="rare-data" for="rare-email">Ваш e-mail:</label>
               <input type="email" name="email" id="rare-email" placeholder="Например, example@email.com" required>
             </p>
             <p class="rare-form-data">
-              <label for="rare-order">Что нужно привезти:</label>
+              <label class="rare-data" for="rare-order">Что нужно привезти:</label>
               <input type="text" name="order" id="rare-order" placeholder="В свободной форме" required>
             </p>
+            <!-- тут ещё нет количества! -->
             <button class="button" type="submit">Отправить</button>
           </form>
         </div>
