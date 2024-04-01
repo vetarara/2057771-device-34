@@ -27,7 +27,6 @@ body { /*список css-правил*/
   font-family: "Rubik", sans-serif; /*если долго не загружается декоративный шрифт, то браузер покажет любой системный шрифт без засечек*/
   font-size: 18px; /*базовые размеры текста для всего проекта*/
   line-height: 30px; /*базовая величина пространства между строками в тексте для всего проекта*/
-  font-weight: 400;
   color: #000000;
   background-color: #ffffff;
 }
@@ -39,6 +38,7 @@ body { /*список css-правил*/
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 /*шапка. модальное окно с корзиной пока не стилизую.*/
@@ -48,12 +48,14 @@ body { /*список css-правил*/
 }
 
 .search-input {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  color: #000000; /*цвет у плейсхолдера не поменялся. надо поменять потом!*/
+  color: #000000; /*цвет всё равно не применяется именно к инпуту. он не чёрный. */
 }
 
 .search-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   text-align: center; /*возможно, оно центр и так, по умолчанию?*/
@@ -70,6 +72,7 @@ body { /*список css-правил*/
   line-height: 21px;
   color: inherit;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .navigation-info-link {
@@ -78,6 +81,7 @@ body { /*список css-правил*/
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.2em;
 }
 
 .navigation-catalogue-link {
@@ -123,6 +127,7 @@ body { /*список css-правил*/
   line-height: 24px;
   text-decoration: none;
   color: inherit;
+  letter-spacing: -0.02em;
 }
 
 /*сервис*/
@@ -149,12 +154,14 @@ body { /*список css-правил*/
   color: inherit;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.2em;
 }
 
 /*о нас*/
 .about {
   color: #444444;
 }
+
 .about-delivery-title,
 .about-contacts-title {
   font-family: "Raleway", sans-serif;
@@ -168,6 +175,7 @@ body { /*список css-правил*/
   line-height: 20px;
   text-decoration: none;
   color: #000000;
+  letter-spacing: -0.02em;
 }
 
 .about-contacts-connection,
@@ -187,7 +195,7 @@ body { /*список css-правил*/
   font-style: normal;
 }
 
-/*блок подписки. форму подписки пока не трогаю.*/
+/*блок подписки.*/
 .subscription {
   background-color: #f0f0f0;
 }
@@ -196,12 +204,24 @@ body { /*список css-правил*/
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000000;
 }
 
 .subscription-description,
 .subscription-advantage {
   color: #444444;
+}
+
+.subscription-input {
+  font-family: inherit;
+  color: #444444;
+}
+
+.subscription-button {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 /*футер*/
@@ -224,6 +244,7 @@ body { /*список css-правил*/
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.2em;
 }
 
 .footer-contact-number-link {
@@ -255,12 +276,14 @@ body { /*список css-правил*/
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
+  letter-spacing: 0.2em;
 }
 
 /*фильтр*/
 .catalog-filter-group-title {
- line-height: 20px;
- font-weight: 700;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .control-input { /*эти стили, если их прописывать для инпут, не вступают в силу... пока пропущу формы фильтров*/
@@ -281,6 +304,7 @@ body { /*список css-правил*/
   font-weight: 700;
   line-height: 20px;
   color: #000000;
+  letter-spacing: -0.02em;
 }
 
 .product-card-price {
@@ -301,6 +325,7 @@ body { /*список css-правил*/
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .pagination-link-text {
@@ -308,6 +333,7 @@ body { /*список css-правил*/
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.2em;
 }
 
 .pagination-link {
