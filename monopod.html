@@ -8,55 +8,58 @@
   </head>
 
   <body>
+    <div class="page-container">
+      <header class="inner-header">
+      <nav class="navigation"></nav>
+        <h2 class="visually-hidden">Магазин Device</h2>
+        <a class="logo" href="index.html">
+          <img class="logo-header" src="images/header/logo.svg" width="145" height="36" alt="Интернет-магазин "Device".">
+        </a>
 
-    <header class="inner-header">
-      <h2 class="visually-hidden">Магазин Device</h2>
-      <a class="logo" href="index.html">
-        <img class="logo-header" src="images/header/logo.svg" width="145" height="36" alt="Интернет-магазин "Device".">
-      </a>
-      <form class="search" action="#" method="post">
-        <label class="visually-hidden">
-          <input class="search-input" type="search" placeholder="Текст поиска">
-        </label>
-        <button class="search-button" type="button">Найти</button>
-      </form>
+        <div class="search-user-navigation"></div>
+          <form class="search" action="#" method="post">
+            <label class="visually-hidden">
+              <input class="search-input" type="search" placeholder="Текст поиска">
+            </label>
+            <button class="search-button" type="button">Найти</button>
+          </form>
 
-      <nav class="navigation">
-        <ul class="navigation-authorization-list">
-          <li class="navigation-authorization-item">
-            <a class="navigation-authorization-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
-          </li>
-          <li class="navigation-authorization-item">
-            <a class="navigation-authorization-link" href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как?
-            и вообще, скорее всего, именно выйти - это кнопка. но не факт:
-           1. Если клик по ней должен открывать окно для ввода регистрационных данных на этой же странице, это кнопка.
-           2. Если при нажатии должна открываться отдельная страница для входа, это ссылка.-->
-          </li>
-        </ul>
 
-        <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Корзина</a>
-            <ul class="cart-list">
-              <li class="cart-item">
-                <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
-              </li>
-              <li class="cart-item">
-                <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
-              </li>
-              <li class="cart-item">
-                <span class="cart-quantity">Товаров: 2</span>
-                <span class="cart-amount">Сумма: 2000 ₽</span>
-              </li>
-              <li class="cart-item">
-                <a class="cart-link" href="#">Открыть корзину</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="navigation-authorization-list">
+            <li class="navigation-authorization-item">
+              <a class="navigation-authorization-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
+            </li>
+            <li class="navigation-authorization-item">
+              <a class="navigation-authorization-link" href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как?
+              и вообще, скорее всего, именно выйти - это кнопка. но не факт:
+             1. Если клик по ней должен открывать окно для ввода регистрационных данных на этой же странице, это кнопка.
+             2. Если при нажатии должна открываться отдельная страница для входа, это ссылка.-->
+            </li>
+          </ul>
+
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
+                </li>
+                <li class="cart-item">
+                  <span class="cart-quantity">Товаров: 2</span>
+                  <span class="cart-amount">Сумма: 2000 ₽</span>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-link" href="#">Открыть корзину</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
         <ul class="navigation-catalogue-list">
           <li>
@@ -96,9 +99,9 @@
           </li>
         </ul>
       </nav>
-    </header>
+      </header>
 
-    <main class="main-container inner-main">
+      <main class="main-container inner-main"> <!--  main-container - класс, который отвечает за стики-футер -->
       <header class="inner-title">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
       </header>
@@ -257,9 +260,9 @@
         </ol>
       </section>
 
-    </main>
+      </main>
 
-    <footer class="inner-footer">
+      <footer class="inner-footer">
       <section class="footer-physical-address">
         <h2 class="visually-hidden">Наш адрес</h2>
         <a href="index.html">
@@ -321,6 +324,7 @@
           <img class="logo-htmlacademy" src="images/footer/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Академии">
         </a>
       </section>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

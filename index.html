@@ -8,57 +8,60 @@
   </head>
 
   <body>
-
-    <header class="main-header">
-      <span id="tothetop" class="visually-hidden"></span>
-      <h1 class="visually-hidden">Магазин Device</h1>
-      <a class="logo" href="#">
-        <img class="logo-header" src="images/header/logo.svg" width="145" height="36" alt="Интернет-магазин "Device".">
-      </a>
-      <form action="#" method="post">
-        <label class="visually-hidden">
-          <input class="search-input" type="search" placeholder="Текст поиска">
-        </label>
-        <button class="search-button" type="button">Найти</button> <!-- Какие типы ещё бывают:  button | reset | submit -->
-      </form>
-
+    <div class="page-container">
+      <header class="main-header">
       <nav class="navigation">
-        <ul class="navigation-authorization-list">
-          <li class="navigation-authorization-item">
-            <a class="navigation-authorization-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
-          </li>
-          <li class="navigation-authorization-item">
-            <a class="navigation-authorization-link" href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как?
-            и вообще, скорее всего, именно выйти - это кнопка. но не факт:
-           1. Если клик по ней должен открывать окно для ввода регистрационных данных на этой же странице, это кнопка.
-           2. Если при нажатии должна открываться отдельная страница для входа, это ссылка.-->
-          </li>
-        </ul>
+        <span id="tothetop" class="visually-hidden"></span>
+        <h1 class="visually-hidden">Магазин Device</h1>
+        <a class="logo" href="#">
+          <img class="logo-header" src="images/header/logo.svg" width="145" height="36" alt="Интернет-магазин "Device".">
+        </a>
 
-        <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Корзина</a><!-- предпочтительнее, чтобы это была кнопка, на которую ты нажимаешь, и открывается выпадающее меню;
-            если это ссылка, то при наведении на неё открывается выпадающее меню -->
-            <ul class="cart-list">
-              <li class="cart-item">
-                <a class="cart-item-link" href="#">Любительская<br>селфи-палка</a>
-              </li>
-              <li class="cart-item">
-                <a class="cart-item-link" href="#">Любительская<br>селфи-палка</a>
-              </li>
-              <li class="cart-item">
-                <span class="cart-quantity">Товаров: 2</span>
-                <span class="cart-amount">Сумма: 2000 ₽</span>
-              </li>
-              <li class="cart-item">
-                <a class="cart-link" href="#">Открыть корзину</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div class="search-user-navigation">
+          <form action="#" method="post">
+            <label class="visually-hidden">
+              <input class="search-input" type="search" placeholder="Текст поиска">
+            </label>
+            <button class="search-button" type="button">Найти</button> <!-- Какие типы ещё бывают:  button | reset | submit -->
+          </form>
+
+          <ul class="navigation-authorization-list">
+            <li class="navigation-authorization-item">
+              <a class="navigation-authorization-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
+            </li>
+            <li class="navigation-authorization-item">
+              <a class="navigation-authorization-link" href="#">Выйти</a><!-- Видно только на странице каталога, на индексе - нет - как?
+              и вообще, скорее всего, именно выйти - это кнопка. но не факт:
+             1. Если клик по ней должен открывать окно для ввода регистрационных данных на этой же странице, это кнопка.
+             2. Если при нажатии должна открываться отдельная страница для входа, это ссылка.-->
+            </li>
+          </ul>
+
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a><!-- предпочтительнее, чтобы это была кнопка, на которую ты нажимаешь, и открывается выпадающее меню;
+              если это ссылка, то при наведении на неё открывается выпадающее меню -->
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">Любительская<br>селфи-палка</a>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">Любительская<br>селфи-палка</a>
+                </li>
+                <li class="cart-item">
+                  <span class="cart-quantity">Товаров: 2</span>
+                  <span class="cart-amount">Сумма: 2000 ₽</span>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-link" href="#">Открыть корзину</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
         <ul class="navigation-catalogue-list">
           <li>
@@ -98,9 +101,9 @@
           </li>
         </ul>
       </nav>
-    </header>
+      </header>
 
-    <main class="main-container main-index"> <!--  main-container - класс, который отвечает за стики-футер -->
+      <main class="main-container main-index"> <!--  main-container - класс, который отвечает за стики-футер -->
       <section class="popular">
         <h2 class="visually-hidden">Популярные товары</h2>
 
@@ -113,24 +116,28 @@
         </button>
 
         <figure class="popular-item">
-          <figcaption class="visually-hidden">Квадрокоптер</figcaption>
-          <img class="popular" src="images/slider/quadcopter.png" width="560" height="560" alt="Чёрно-белый квадрокоптер с лазером">
-          <p class="popular-slogan"><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
-          <p class="popular-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="button popular-link" href="#">Подробнее</a>
-          <table class="popular-table">
-            <tr>
-              <td class="popular-value">800 м</td>
-              <td class="popular-value">50 м</td>
-            </tr>
-            <tr>
-              <td class="popular-parameter">Дальность полета</td>
-              <td class="popular-parameter">Радиус поражения</td>
-            </tr>
-          </table>
+          <div class="popular-container">
+            <figcaption class="visually-hidden">Квадрокоптер</figcaption>
+            <img class="popular" src="images/slider/quadcopter.png" width="560" height="560" alt="Чёрно-белый квадрокоптер с лазером">
+          </div>
+          <div class="popular-container">
+            <p class="popular-slogan"><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
+            <p class="popular-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="button popular-link" href="#">Подробнее</a>
+            <table class="popular-table">
+              <tr>
+                <td class="popular-value">800 м</td>
+                <td class="popular-value">50 м</td>
+              </tr>
+              <tr>
+                <td class="popular-parameter">Дальность полета</td>
+                <td class="popular-parameter">Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
         </figure>
-
-        <figure class="popular-item"> <!-- Как сделать так, чтобы применились новые настройки editorcofig? -->
+<!-- ЗАКОММЕНТИРОВАНО, ЧТОБЫ ПОНЯТЬ, КАК РАССТАВИТЬ ХОТЯ БЫ ОДИН popular-item!
+        <figure class="popular-item"> <!-- Как сделать так, чтобы применились новые настройки editorcofig?
           <figcaption class="visually-hidden">Фитнес-браслет</figcaption>
           <img class="popular" src="images/slider/fitness-bracelet.png" width="560" height="560" alt="Чёрный фитнес-браслет с надписью: Я вижу, что ты снова ешь :(">
           <p class="popular-slogan"><b>Худеем<br>правильно!</b></p>
@@ -165,7 +172,7 @@
             </tr>
           </table>
         </figure>
-
+-->
       </section>
 
       <section class="categories">
@@ -197,33 +204,48 @@
         <h2 class="visually-hidden"> Условия доставки, гарантия, возможность кредита</h2>
 
         <div class="service-delivery">
-          <h3 class="service-name">Доставка</h3>
-          <button class="button service-button" type="button">Доставка</button>
-          <p class="service-description">Мы с удовольствием доставим ваш товар прямо<br> вашему подъезду совершенно бесплатно! Ведь<br>
-            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <div class="service-button-container">
+            <button class="button service-button" type="button">Доставка</button>
+          </div>
+          <div class="service-container">
+            <h3 class="service-name">Доставка</h3>
+            <p class="service-description">Мы с удовольствием доставим ваш товар прямо<br> вашему подъезду совершенно бесплатно! Ведь<br>
+              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
         </div>
-
+<!-- ЗАКОММЕНТИРОВАНО, ЧТОБЫ ПОНЯТЬ, КАК РАССТАВИТЬ ХОТЯ БЫ ОДИН service-delivery!
         <div class="service-guarantee">
-          <h3 class="service-name">Гарантия</h3>
-          <button class="button service-button" type="button">Гарантия</button>
-          <p class="service-description">Если из-за возгорания купленного у нас товара у вас<br>сгорит дом — не переживайте, мы выдадим вам новый.<br>
-            Товар, не дом, конечно же.</p>
+          <div class="service-button-container">
+            <button class="button service-button" type="button">Гарантия</button>
+          </div>
+          <div class="service-container">
+            <h3 class="service-name">Гарантия</h3>
+            <p class="service-description">Если из-за возгорания купленного у нас товара у вас<br>сгорит дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.</p>
+          </div>
         </div>
 
         <div class="service-credit">
-          <h3 class="service-name">Кредит</h3>
-          <button class="button service-button" type="button">Кредит</button>
-          <p class="service-description">Залезть в долговую яму стало проще! Кредитные<br>
-            консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка, разумеется.</p>
+          <div class="service-button-container">
+            <button class="button service-button" type="button">Кредит</button>
+          </div>
+          <div class="service-container">
+            <h3 class="service-name">Кредит</h3>
+            <p class="service-description">Залезть в долговую яму стало проще! Кредитные<br>
+              консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка, разумеется.</p>
+          </div>
         </div>
+        -->
       </section>
 
 
       <section class="rare-preview">
         <h3 class="visually-hidden">Доставка на заказ</h3>
-        <a class="rare-delivery" href="">Доставим редкий товар под заказ</a> <!-- Это ссыдка.
-          В случае, когда сработает JavaScript, откроется попап для заполнения формы.
-          В противном случае пользователя можно перекинуть на отдельную страницу с данной формой. -->
+        <div class="rare-container">
+          <a class="rare-delivery" href="">Доставим редкий товар под заказ</a> <!-- Это ссыдка.
+            В случае, когда сработает JavaScript, откроется попап для заполнения формы.
+            В противном случае пользователя можно перекинуть на отдельную страницу с данной формой. -->
+        </div>
         <div class="rare">
           <form class="rare-form" action="https://echo.htmlacademy.ru/" method="post">
             <h4 class="rare-title">Доставка под заказ</h4>
@@ -307,9 +329,9 @@
         <span class="subscription-advantage">Это бесплатно</span>
       </section>
 
-    </main>
+      </main>
 
-    <footer class="main-footer">
+      <footer class="main-footer">
       <section class="footer-physical-address">
         <h2 class="visually-hidden">Наш адрес</h2>
         <a href="#tothetop">
@@ -371,6 +393,7 @@
           <img class="logo-htmlacademy" src="images/footer/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Академии">
         </a>
       </section>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
