@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="page-container">
+
       <header class="inner-header">
         <nav class="navigation">
           <h2 class="visually-hidden">Магазин Device</h2>
@@ -265,73 +265,72 @@
         </section>
       </div>
 
-
-
       </main>
 
-      <footer class="inner-footer">
-      <section class="footer-physical-address">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <a href="index.html">
-          <img img class="logo-footer" src="images/footer/logo.svg" width="145" height="36" alt="Логотип интернет-магазина "Device".">
-        </a>
-        <address class="footer-contact-address">
-          <p class="footer-contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        </address>
-      </section>
-
-
-      <section class="footer-navigation">
-        <h2 class="visually-hidden">Условия доставки, гарантии и наши контакты</h2>
-        <ul class="footer-service-list">
-          <li class="footer-service-item">
-            <a class="footer-service-link" href="#">Доставка</a>
-          </li>
-          <li class="footer-service-item">
-            <a class="footer-service-link" href="#">Гарантия</a>
-          </li>
-          <li class="footer-service-item">
-            <a class="footer-service-link" href="#">Контакты</a>
-          </li>
-        </ul>
-
-        <ul class="footer-social"> <!--Иконки соцюсетей - и декоративные, и контентные.
-        Поэтому тут нужен комплексный подход:
-        1. внутри ссылки обязательно прописывается поясняющий текст - есть
-        2. Изображение на этих кнопках-ссылках декоративные (прописываются через CSS, background-image для ссылки)
-        3.Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden. - есть
-        Таким образом, при потере CSS-файла, изображение пропадёт, а текст ссылки появится.
-        При нормальной работе сайта пользователь увидит лишь изображение.
-        Также необходимо не забывать про доступность — так как в разметке мы прописываем текст ссылки,
-        то при чтении сайта скринридером, ссылки будут озвучены. -->
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
-              <span class="visually-hidden">Telegram</span>
+      <footer class="page-footer">
+        <div class="footer-container">
+          <section class="footer-physical-address">
+            <h2 class="visually-hidden">Наш адрес</h2>
+            <a href="#tothetop">
+              <img img class="logo-footer" src="images/footer/logo.svg" width="145" height="36" alt="Логотип интернет-магазина "Device".">
             </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+            <address class="footer-contact-address">
+              <p class="footer-contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            </address>
+          </section>
 
-      <section class="footer-contact-number">
-        <h2 class="visually-hidden">Контактный номер телефона</h2>
-        <address class="footer-contact-number">
-          <a class="footer-contact-number-link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
-        </address>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="logo-htmlacademy" src="images/footer/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Академии">
-        </a>
-      </section>
+          <section class="footer-navigation">
+            <h2 class="visually-hidden">Условия доставки, гарантии и наши контакты</h2>
+            <ul class="footer-service-list">
+              <li class="footer-service-item">
+                <a class="footer-service-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-service-item">
+                <a class="footer-service-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer-service-item">
+                <a class="footer-service-link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="footer-social"> <!--Иконки соцюсетей - и декоративные, и контентные.
+            Поэтому тут нужен комплексный подход:
+            1. внутри ссылки обязательно прописывается поясняющий текст - есть
+            2. Изображение на этих кнопках-ссылках декоративные (прописываются через CSS, background-image для ссылки)
+            3.Для доступного скрытия текста ссылки необходимо добавить класс .visually-hidden. - есть
+            Таким образом, при потере CSS-файла, изображение пропадёт, а текст ссылки появится.
+            При нормальной работе сайта пользователь увидит лишь изображение.
+            Также необходимо не забывать про доступность — так как в разметке мы прописываем текст ссылки,
+            то при чтении сайта скринридером, ссылки будут озвучены. -->
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#">
+                  <span class="visually-hidden">YouTube</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="footer-contact-number">
+            <h2 class="visually-hidden">Контактный номер телефона</h2>
+            <address class="footer-contact-number">
+              <a class="footer-contact-number-link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
+            </address>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+              <img class="logo-htmlacademy" src="images/footer/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Академии">
+            </a>
+          </section>
+        </div>
       </footer>
-    </div>
+
   </body>
 </html>
