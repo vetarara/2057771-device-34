@@ -118,7 +118,7 @@ body { /*список css-правил*/
   width: 1040px;
 }
 
-.navigation-catalogue-open {
+.navigation-catalog-open {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   color: inherit;
@@ -162,7 +162,7 @@ body { /*список css-правил*/
   letter-spacing: 0.2em;
 }
 
-.navigation-catalogue-link {
+.navigation-catalog-link {
   font-size: 16px;
   line-height: 18px;
   color: inherit;
@@ -431,8 +431,9 @@ body { /*список css-правил*/
 }
 
 /*внутренняя страница: моноподы для селфи*/
-.inner-main {
-  background-color: #f0f0f0;
+.inner-main-navigation {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .inner-header-title {
@@ -441,7 +442,7 @@ body { /*список css-правил*/
   line-height: 50px;
 }
 
-.breadcrumbs-list { /*вряд ли это относится к крупной сетке, пока оставляю так*/
+.breadcrumbs-list { /*это не относится к крупной сетке, пока оставляю так*/
   display: flex;
 }
 
@@ -452,6 +453,21 @@ body { /*список css-правил*/
   text-decoration: none;
 }
 
+.inner-main-container {
+  background-color: #f0f0f0;
+}
+
+/*фильтр*/
+.catalog-container {
+  width: 1160px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.catalog-filter {
+  width: 320px;
+}
+
 .catalog-filter-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -459,14 +475,6 @@ body { /*список css-правил*/
   letter-spacing: 0.2em;
 }
 
-.select-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.2em;
-}
-
-/*фильтр*/
 .catalog-filter-group-title {
   line-height: 20px;
   font-weight: 700;
@@ -478,7 +486,18 @@ body { /*список css-правил*/
   line-height: 19px;
 }
 
+.select-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+}
+
 /*карточки товаров*/
+
+.catalog-products {
+  width: 840px;
+}
 .product {
   background-color: #ffffff;
 }
