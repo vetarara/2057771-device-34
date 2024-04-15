@@ -82,6 +82,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   cursor: pointer;
+  display: block;
 }
 
 /*шапка*/
@@ -123,6 +124,7 @@ body {
   line-height: 20px;
   text-align: center;
   /*возможно, оно центр и так, по умолчанию?*/
+  margin-right: 26px;
 }
 
 .navigation-authorization-list {
@@ -136,40 +138,44 @@ body {
 
 .navigation-authorization-link {
   /*войти, выйти*/
+  flex-wrap: wrap;
   color: inherit;
   text-decoration: none;
   display: block;
   height: 30px;
-  padding-left: 27px;
-  padding-right: 2px;
-  margin-left: 26px; /*тут нужно будет разобраться с Колей Петуховым и выходом, т.к. у кнопки выйти не должно быть паддинга слева, только марджин*/
+  min-width: 82px;
+  margin-right: 28px; /*это для Коли Петухова*/
+
 }
 
 .navigation-user-list {
+  display: flex;
   max-width: 250px;
-  /*по факту ширина 241px. В лайве говорили про "добавить запас", но там всё будто бы впритык, поэтому пока добавила столько.*/
+  /*по факту ширина 240px. В лайве говорили про "добавить запас", но там всё будто бы впритык, поэтому пока добавила столько.*/
+  margin: 0;
+  padding: 0;
+  padding-right: 60px;
   margin-left: auto;
-  /*пока не уверена, что это тут будет нужно. будет понятно, когда приступлю к микросеткам*/
+  list-style-type: none;
+  text-align: right;
+}
+
+.navigation-user-item {
+  min-width: 105px;
+  margin-right: 18px;
+  padding: 5px 0;
+  padding-left: 12px;
+}
+
+.navigation-user-item:last-child {
+  margin-right: 0;
 }
 
 .navigation-user-link {
   /*сравнить, корзина*/
+  flex-wrap: wrap;
   color: inherit;
   text-decoration: none;
-}
-
-.navigation-container {
-  display: flex;
-  justify-content: space-between;
-  width: 1040px;
-}
-
-.navigation-catalog-open {
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  color: inherit;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
 }
 
 .cart-item-link {
@@ -200,6 +206,45 @@ body {
   letter-spacing: 0.2em;
 }
 
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  padding-left: 60px;
+}
+
+.navigation-catalog-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-catalog-open {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 14px 6px;
+}
+
+.navigation-info-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 472px;
+}
+
+.navigation-info-item {
+  margin-right: 45px;
+}
+
+.navigation-info-item:last-child {
+  margin-right: 0;
+}
+
 .navigation-info-link {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
@@ -207,6 +252,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+  display: block;
+  padding: 14px 6px;
+  text-align: right;
 }
 
 .navigation-catalog-link {
@@ -227,6 +275,7 @@ body {
   display: flex;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .popular-item {
@@ -236,14 +285,29 @@ body {
   padding: 0;
 }
 
+.popular-image {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 .popular-slogan {
+  margin: 0;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  max-width: 560px;
+  margin-top: 121px;
+  margin-bottom: 29px;
 }
 
 .popular-description {
+  margin: 0;
+  padding: 0;
   color: #444444;
+  max-width: 560px;
+  margin-bottom: 51px;
 }
 
 .popular-link {
@@ -253,6 +317,14 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  width: 220px;
+  height: 40px;
+  margin-bottom: 49px;
+}
+
+.popular-table {
+  min-width: 156px;
+  border-spacing: 20px 12px;
 }
 
 .popular-value {
@@ -270,6 +342,7 @@ body {
 .categories {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .categories-list {
@@ -277,6 +350,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .categories-link {
@@ -285,11 +359,16 @@ body {
   text-decoration: none;
   color: inherit;
   letter-spacing: -0.02em;
+  display: block;
+  width: 160px;
+  height: 60px;
+  padding-top: 192px;
 }
 
 /*сервис*/
 .service {
   background-color: #f0f0f0;
+  margin-bottom: 70px;
 }
 
 .service-container {
@@ -300,22 +379,38 @@ body {
 
 .service-button-container {
   width: 287px;
+  border-right: 7px solid #000000;
+  margin-right: 116px;
+}
+
+.service-button {
+  width: 280px;
+  height: 40px;
+  background-color: #000000;
+  color:#ffe17f;
+  margin-top: 64px;
 }
 
 .service-description-container {
   width: 873px;
   margin: 0 auto;
-  padding: 73px 63px 73px 116px;
+  padding: 78px 63px 78px 116px; /*думаю, эта строка окажется лишней при добавлении svg*/
 }
 
 .service-name {
+  margin: 0;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin-bottom: 34px;
 }
 
 .service-description {
   color: #444444;
+  margin: 0;
+  padding: 0;
+  max-width: 475px;
 }
 
 /*Доставка на заказ*/
@@ -324,6 +419,8 @@ body {
   text-align: center;
   width: 1160px;
   margin: 0 auto;
+  padding: 40px 125px;
+  margin-bottom: 70px;
 }
 
 .rare-delivery {
@@ -342,6 +439,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 .rare-data {
@@ -357,6 +456,7 @@ body {
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .about-delivery-title {
@@ -364,13 +464,35 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px; /*возможно, нужно лучше поставить марджин-боттом 40 у черты над "О нас"*/
+  margin-bottom: 48px;
 }
 
-.about-contacts-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000000;
+.about-delivery-description {
+  margin: 0;
+  padding: 0;
+  max-width: 497px;
+  margin-bottom: 30px;
+}
+
+.about-delivery-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.about-delivery-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 26px;
+  margin-bottom: 19px;
+}
+
+.about-delivery-item:last-child {
+  margin-bottom: 0;
 }
 
 .about-delivery-link {
@@ -380,25 +502,78 @@ body {
   letter-spacing: -0.02em;
 }
 
+.button-more {
+  text-align: start;
+  padding: 10px 6px;
+  min-width: 258px; /*возможно, лучше будет для баттон удказать одну минимальную ширину, и не указывать её для каждой кнопки отдельно*/
+}
+
+.about-contacts-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;  /*возможно, нужно лучше поставить марджин-боттом 40 у черты над "Контакты"*/
+  margin-bottom: 48px;
+}
+
+.about-contacts-description {
+  margin: 0;
+  padding: 0;
+  max-width: 510px;
+  margin-bottom: 30px;
+}
+
 .about-contacts-connection {
   font-weight: 700;
   font-size: 24px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
-.about-contacts-schedule {
-  font-weight: 700;
-  font-size: 24px;
+.about-contacts-address {
+  margin-bottom: 30px;
 }
 
 .about-contacts-address-text {
   color: inherit;
   font-style: normal;
+  margin: 0;
 }
 
 .about-contacts-number {
   text-decoration: underline;
   color: inherit;
   font-style: normal;
+}
+
+.about-contacts-schedule {
+  font-weight: 700;
+  font-size: 24px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-schedule {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contacts-schedule-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-connection {
+  text-align: start;
+  padding: 10px 6px;
+  min-width: 258px; /*возможно, лучше будет для баттон удказать одну минимальную ширину, и не указывать её для каждой кнопки отдельно*/
 }
 
 /*блок подписки.*/
