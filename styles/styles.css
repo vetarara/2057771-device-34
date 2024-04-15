@@ -59,6 +59,18 @@ body {
   /*для надёжности, т.к. пользователь может добавить плагин на браузер или поменять шрифт в браузере*/
   color: #000000;
   background-color: #ffffff;
+  padding-top: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -85,6 +97,11 @@ body {
   margin: 0 auto;
 }
 
+.logo-header {
+  margin-top: -36px; /*не поднимается выше -20px походу, почему??? должно быть -36 по идее*/
+  margin-left: 60px; /*margin-left по идее не задаётся, лишь за редким исключением. есть ощущение, что лого нужно вынести из хэдера в body...*/
+}
+
 .search-user-navigation {
   display: flex;
   width: 1040px;
@@ -109,16 +126,23 @@ body {
 }
 
 .navigation-authorization-list {
+  display: flex;
   margin: 0;
   padding: 0;
   width: 240px;
   /*по факту Коля Путухов и Выйти - 231px. В лайве говорили про "добавить запас", но там всё будто бы впритык, поэтому пока добавила столько.*/
+  list-style-type: none;
 }
 
 .navigation-authorization-link {
   /*войти, выйти*/
   color: inherit;
   text-decoration: none;
+  display: block;
+  height: 30px;
+  padding-left: 27px;
+  padding-right: 2px;
+  margin-left: 26px; /*тут нужно будет разобраться с Колей Петуховым и выходом, т.к. у кнопки выйти не должно быть паддинга слева, только марджин*/
 }
 
 .navigation-user-list {
