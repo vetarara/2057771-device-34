@@ -45,7 +45,7 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">Корзина</a>
-              <ul class="cart-list">
+              <!-- <ul class="cart-list">
                 <li class="cart-item">
                   <a class="cart-link" href="#">Любительская<br>селфи-палка</a>
                 </li>
@@ -59,7 +59,7 @@
                 <li class="cart-item">
                   <a class="cart-link" href="#">Открыть корзину</a>
                 </li>
-              </ul>
+              </ul> -->
             </li>
           </ul>
         </div>
@@ -69,7 +69,7 @@
             <li>
               <button class="navigation-catalog-open" type="button">Каталог товаров</button>
               <!-- Это кнопка, а не ссылка! -->
-              <ul class="navigation-catalog-list">
+              <!-- <ul class="navigation-catalog-list">
                 <li class="navigation-catalog-item">
                   <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
                 </li>
@@ -88,7 +88,7 @@
                 <li class="navigation-catalog-item">
                   <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
                 </li>
-              </ul>
+              </ul> -->
             </li>
           </ul>
 
@@ -198,7 +198,7 @@
             </form>
           </section>
 
-          <div class=" ">
+          <div class="right-column">
             <section class="select">
               <h2 class="select-title">Сортировка:</h2>
               <select class="select-control">
@@ -206,76 +206,93 @@
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
-              <a href="#" class="button-up">
-                <span class="visually-hidden">Вверх</span>
-              </a>
-              <a href="#" class="button-down">
-                <span class="visually-hidden">Вниз</span>
-              </a>
+              <div class="select-buttons">
+                <a href="#" class="button-up">
+                  <span class="visually-hidden">Вверх</span>
+                </a>
+                <a href="#" class="button-down">
+                  <span class="visually-hidden">Вниз</span>
+                </a>
+              </div>
             </section>
 
             <section class="product">
-              <h2 class="visually-hidden">Товары</h2>
-              <ol class="product-list">
-                <!-- очерёдность здесь важна, т.к. товары сортируются по определённому признаку -->
-                <li class="product-card">
-                  <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/monopods/monopod-hobby.jpg" width="360" height="380"
-                      alt="Селфи-палка с прикреплённым к ней телефоном">
-                    <h3 class="product-card-title">Любительская<br>селфи-палка</h3>
-                    <b class="product-card-price" href="#">500 ₽</b>
-                  </a>
-                </li>
-                <li class="product-card">
-                  <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/monopods/monopod-pro.jpg" width="360" height="380"
-                      alt="Собранная селфи-палка">
-                    <h3 class="product-card-title">Профессиональная<br>селфи-палка</h3>
-                    <b class="product-card-price" href="#">1 500 ₽</b>
-                  </a>
-                </li>
-                <li class="product-card">
-                  <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/monopods/monopod-unsinkable.jpg" width="360"
-                      height="380" alt="Чёрная селфи-палка с жёлтыми элементами и прикреплённой к ней камерой GoPro">
-                    <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
-                    <b class="product-card-price" href="#">2 500 ₽</b>
-                  </a>
-                </li>
-                <li class="product-card">
-                  <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/monopods/monopod-follow-me.jpg" width="360" height="380"
-                      alt="Селфи-палка в форме руки">
-                    <h3 class="product-card-title">Селфи-палка «Следуй<br>за мной»</h3>
-                    <b class="product-card-price" href="#">1 500 ₽</b>
-                  </a>
-                </li>
-              </ol>
+              <div class="product-cards">
+                <h2 class="visually-hidden">Товары</h2>
+                <ol class="product-list">
+                  <!-- очерёдность здесь важна, т.к. товары сортируются по определённому признаку -->
+                  <li class="product-card">
+                    <a class="product-card-link" href="#">
+                      <img class="product-card-image" src="images/monopods/monopod-hobby.jpg" width="360" height="380"
+                        alt="Селфи-палка с прикреплённым к ней телефоном">
+                      <h3 class="product-card-title">Любительская<br>селфи-палка</h3>
+                      <b class="product-card-price" href="#">500 ₽</b>
+                    </a>
+                  </li>
+                  <li class="product-card">
+                    <a class="product-card-link" href="#">
+                      <img class="product-card-image" src="images/monopods/monopod-pro.jpg" width="360" height="380"
+                        alt="Собранная селфи-палка">
+                      <h3 class="product-card-title">Профессиональная<br>селфи-палка</h3>
+                      <b class="product-card-price" href="#">1 500 ₽</b>
+                    </a>
+                  </li>
+                  <li class="product-card">
+                    <a class="product-card-link" href="#">
+                      <img class="product-card-image" src="images/monopods/monopod-unsinkable.jpg" width="360"
+                        height="380" alt="Чёрная селфи-палка с жёлтыми элементами и прикреплённой к ней камерой GoPro">
+                      <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
+                      <b class="product-card-price" href="#">2 500 ₽</b>
+                    </a>
+                  </li>
+                  <li class="product-card">
+                    <a class="product-card-link" href="#">
+                      <img class="product-card-image" src="images/monopods/monopod-follow-me.jpg" width="360" height="380"
+                        alt="Селфи-палка в форме руки">
+                      <h3 class="product-card-title">Селфи-палка «Следуй<br>за мной»</h3>
+                      <b class="product-card-price" href="#">1 500 ₽</b>
+                    </a>
+                  </li>
+                </ol>
+              </div>
+
 
               <button class="pagination-show-more" type="button">Загрузить ещё</button>
-              <ol class="pagination">
-                <li class="pagination-item">
-                  <a class="pagination-link-text pagination-prev pagination-disabled">Назад</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-current">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" type="button">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link">3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link">15</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link-text pagination-next">Вперёд</a>
-                </li>
-              </ol>
+
+              <div class="pagination">
+                <button class="pagination-button" type="button">Назад</button>
+
+                <ol class="pagination-list">
+                  <li class="pagination-item">
+                    <a class="pagination-link-text pagination-prev pagination-disabled">
+                      <span class="visually-hidden">Предыдущая страница</span>
+                    </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" type="button">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link">15</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-next">
+                      <span class="visually-hidden">Следующая страница</span>
+                    </a>
+                  </li>
+                </ol>
+
+                <button class="pagination-button" type="button">Вперёд</button>
+              </div>
+
             </section>
           </div>
         </div>
@@ -291,7 +308,7 @@
               alt="Логотип интернет-магазина " Device".">
           </a>
           <address class="footer-contact-address">
-            <p class="footer-contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="footer-contact-address-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
           </address>
         </section>
 
@@ -309,7 +326,7 @@
             </li>
           </ul>
 
-          <ul class="footer-social"> <!--Иконки соцюсетей - и декоративные, и контентные.
+          <ul class="footer-social-list"> <!--Иконки соцюсетей - и декоративные, и контентные.
             Поэтому тут нужен комплексный подход:
             1. внутри ссылки обязательно прописывается поясняющий текст - есть
             2. Изображение на этих кнопках-ссылках декоративные (прописываются через CSS, background-image для ссылки)
@@ -336,7 +353,7 @@
           </ul>
         </section>
 
-        <section class="footer-contact-number">
+        <section class="footer-contact">
           <h2 class="visually-hidden">Контактный номер телефона</h2>
           <address class="footer-contact-number">
             <a class="footer-contact-number-link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
