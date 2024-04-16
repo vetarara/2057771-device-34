@@ -99,8 +99,9 @@ body {
 }
 
 .logo-header {
-  margin-top: -36px; /*не поднимается выше -20px походу, почему??? должно быть -36 по идее*/
+  margin-top: -20px;
   margin-left: 60px; /*margin-left по идее не задаётся, лишь за редким исключением. есть ощущение, что лого нужно вынести из хэдера в body...*/
+  margin-bottom: 30px;
 }
 
 .search-user-navigation {
@@ -108,6 +109,7 @@ body {
   width: 1040px;
   margin: 0 auto;
   /* 0 убирает вертикальные отступы, auto выравнивает по центру */
+  margin-bottom: 30px;
 }
 
 .search-input {
@@ -127,36 +129,36 @@ body {
   margin-right: 26px;
 }
 
-.navigation-authorization-list {
-  display: flex;
+.navigation-authorization-list { /*войти, выйти*/
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 240px;
-  /*по факту Коля Путухов и Выйти - 231px. В лайве говорили про "добавить запас", но там всё будто бы впритык, поэтому пока добавила столько.*/
-  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 150px; /*по макету - 150, мб нужно будет добавить на случай, если имя длиннее будет*/
+}
+
+.navigation-authorization-item {
+  margin-right: 28px; /*это для Коли Петухова*/
 }
 
 .navigation-authorization-link {
-  /*войти, выйти*/
-  flex-wrap: wrap;
   color: inherit;
   text-decoration: none;
   display: block;
   height: 30px;
   min-width: 82px;
-  margin-right: 28px; /*это для Коли Петухова*/
-
+  padding: 5px 12px; /*это конкретно для кнопки "войти", без всяких Коль Петуховых, чётко по макету*/
 }
 
 .navigation-user-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   max-width: 250px;
   /*по факту ширина 240px. В лайве говорили про "добавить запас", но там всё будто бы впритык, поэтому пока добавила столько.*/
-  margin: 0;
-  padding: 0;
-  padding-right: 60px;
   margin-left: auto;
-  list-style-type: none;
   text-align: right;
 }
 
@@ -215,8 +217,8 @@ body {
 
 .navigation-catalog-list {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .navigation-catalog-open {
@@ -225,13 +227,13 @@ body {
   color: inherit;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding: 14px 6px;
+  padding: 14px 58px 14px 6px;
 }
 
 .navigation-info-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   min-width: 472px;
@@ -253,7 +255,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
   display: block;
-  padding: 14px 6px;
+  padding: 14px 0;
   text-align: right;
 }
 
@@ -346,11 +348,11 @@ body {
 }
 
 .categories-list {
-  display: flex;
-  justify-content: space-between;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .categories-link {
@@ -478,13 +480,13 @@ body {
 }
 
 .about-delivery-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
 }
 
 .about-delivery-item {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   padding-left: 26px;
@@ -669,6 +671,9 @@ body {
 
 .breadcrumbs-list {
   /*это не относится к крупной сетке, пока оставляю так*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
