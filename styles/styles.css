@@ -89,9 +89,8 @@ body {
 }
 
 .logo-header {
-  margin-top: -20px;
-  margin-left: 60px; /*margin-left по идее не задаётся, лишь за редким исключением. есть ощущение, что лого нужно вынести из хэдера в body...*/
-  margin-bottom: 30px;
+  margin: -20px 0 30px 60px;
+  display: block;
 }
 
 .search-user-navigation {
@@ -152,8 +151,7 @@ body {
 .navigation-user-item {
   min-width: 105px;
   margin-right: 18px;
-  padding: 5px 0;
-  padding-left: 12px;
+  padding: 5px 0 5px 12px;
 }
 
 .navigation-user-item:last-child {
@@ -251,7 +249,7 @@ body {
   text-decoration: none;
 }
 
-.main-container { /*для стики футера*/
+.main-container {
   flex-grow: 1;
 }
 
@@ -323,7 +321,6 @@ body {
 }
 
 /*категории товаров*/
-
 .categories {
   width: 1160px;
   margin: 0 auto;
@@ -383,7 +380,7 @@ body {
 }
 
 .service-name {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 34px;
   padding: 0;
   font-family: "Raleway", sans-serif;
@@ -422,7 +419,6 @@ body {
 
 .rare-title {
   margin: 0;
-  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -445,9 +441,8 @@ body {
 }
 
 .about-delivery-title {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 48px;
-  padding: 0;
   padding-top: 40px; /*возможно, нужно лучше поставить марджин-боттом 40 у черты над "О нас"*/
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -494,9 +489,8 @@ body {
 }
 
 .about-contacts-title {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 48px;
-  padding: 0;
   padding-top: 40px;  /*возможно, нужно лучше поставить марджин-боттом 40 у черты над "Контакты"*/
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -537,7 +531,6 @@ body {
 .about-contacts-schedule {
   margin: 0;
   margin-bottom: 15px;
-  padding: 0;
   display: block;
   font-weight: 700;
   font-size: 24px;
@@ -561,7 +554,7 @@ body {
   text-align: start;
 }
 
-/*блок подписки.*/
+/*блок подписки*/
 .subscription {
   background-color: #f0f0f0;
 }
@@ -577,10 +570,9 @@ body {
 }
 
 .subscription-title {
-  margin: 0;
+  margin-top: 0;
   margin-right: 252px;
   margin-bottom: 144px;
-  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -626,6 +618,10 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+.logo-footer {
+  display: block;
 }
 
 .footer-contact-address-text {
@@ -709,9 +705,8 @@ body {
 }
 
 .inner-header-title {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 16px;
-  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -752,6 +747,8 @@ body {
 }
 
 .catalog-filter-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -765,8 +762,7 @@ body {
   letter-spacing: -0.02em;
 }
 
-.control-input {
-  /*эти стили, если их прописывать для инпут, не вступают в силу... пока пропущу формы фильтров*/
+.control-input { /*эти стили, если их прописывать для инпут, не вступают в силу... пока пропущу формы фильтров*/
   font-size: 16px;
   line-height: 19px;
 }
@@ -806,7 +802,6 @@ body {
 }
 
 /*карточки товаров*/
-
 .product {
   padding: 70px 40px;
   background-color: #ffffff;
@@ -831,6 +826,8 @@ body {
 }
 
 .product-card-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   line-height: 20px;
   color: #000000;
