@@ -245,22 +245,26 @@
             В противном случае пользователя можно перекинуть на отдельную страницу с данной формой. -->
         </div>
         <div class="rare">
+          <h4 class="rare-title">Доставка под заказ</h4>
           <form class="rare-form" action="https://echo.htmlacademy.ru/" method="post">
-            <h4 class="rare-title">Доставка под заказ</h4>
-            <p class="rare-form-data">
+            <p class="field-group rare-form-name">
               <label class="rare-data" for="rare-userame">Ваше имя:</label>
               <input type="text" name="userame" id="rare-userame" placeholder="Введите имя" required>
             </p>
-            <p class="rare-form-data">
+            <p class="field-group rare-form-email">
               <label class="rare-data" for="rare-email">Ваш e-mail:</label>
               <input type="email" name="email" id="rare-email" placeholder="Например, example@email.com" required>
             </p>
-            <p class="rare-form-data">
+            <p class="field-group rare-form-product">
               <label class="rare-data" for="rare-order">Что нужно привезти:</label>
               <input type="text" name="order" id="rare-order" placeholder="В свободной форме" required>
             </p>
+            <p class="field-group rare-form-quantity">
+              <label class="rare-data" for="rare-order">Количество</label>
+              <input type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" required>
+            </p>
             <!-- тут ещё нет количества! -->
-            <button class="button" type="submit">Отправить</button>
+            <button class="button rare-button" type="submit">Отправить</button>
           </form>
         </div>
       </section>
