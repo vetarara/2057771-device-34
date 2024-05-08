@@ -64,14 +64,17 @@ body {
 }
 
 .button {
-  display: block;
+  display: inline-block;
+  padding: 10px 6px;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   text-align: center;
+  background-color: #ffffff;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  border: none;
   cursor: pointer;
 }
 
@@ -101,6 +104,11 @@ body {
   margin-bottom: 30px;
 }
 
+.search-icon {
+  position: absolute;
+  fill: #000000;
+}
+
 .search-input {
   font-family: inherit;
   font-size: 16px;
@@ -123,6 +131,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+}
+
+.navigation-authorization-icon {
+
 }
 
 .navigation-authorization-item {
@@ -262,6 +274,15 @@ body {
   display: flex;
 }
 
+.slider-button {
+  border: none;
+  cursor: pointer;
+}
+
+.slider-button-prev {
+  fill: #000000;
+}
+
 .popular-item {
   margin: 0;
   padding: 0;
@@ -358,6 +379,9 @@ body {
   width: 1160px;
   margin: 0 auto;
   display: flex;
+  background-image: url("../images/service/courier.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .service-button-container {
@@ -401,21 +425,46 @@ body {
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 70px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   background-color: #f0f0f0;
 }
 
-.rare-delivery {
-  padding: 40px 125px;
+.rare-truck {
+  background-color: #ffe17f;
+  width: 125px;
+  height: 100px;
+  background-image: url("../images/rare-delivery/truck.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rare-delivery-link {
   display: block;
+  padding-top: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 23px;
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
-  text-align: center;
   letter-spacing: 0.2em;
+}
+
+.rare-info {
+  position: relative;
+  width: 125px;
+  height: 100px;
+}
+
+.rare-info-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .rare-title {
@@ -631,15 +680,18 @@ body {
 
 .subscription-advantage {
   margin: 0;
-  padding: 14px 0 14px 16px;
+  padding: 14px 0 14px 28px;
   color: #444444;
+  background-image: url("../images/for-free.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 /*футер*/
 .page-footer {
   padding-top: 62px;
   padding-bottom: 61px;
-  background-color: #444444;
+  background-color: #000000; /*исходный: 444444*/
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -701,9 +753,20 @@ body {
 }
 
 .footer-social-item {
+  position: relative;
   width: 40px;
   height: 40px;
   margin-right: 15px;
+}
+
+.footer-social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #444444;
 }
 
 .footer-contact {

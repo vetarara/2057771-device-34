@@ -23,6 +23,7 @@
         <div class="search-user-navigation">
           <form action="#" method="post">
             <label class="">
+              <svg  class="search-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17"><g clip-path="url(#a)"><path fill="#000" d="m15.7 15.002-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.702c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 .702h16v16H0z"/></clipPath></defs></svg>
               <input class="search-input" type="search" placeholder="Текст поиска">
             </label>
             <button class="search-button" type="button">Найти</button>
@@ -31,16 +32,22 @@
 
           <ul class="navigation-authorization-list">
             <li class="navigation-authorization-item">
-              <a class="navigation-authorization-link" href="#">Войти</a> <!--Меняется на Колю Петухова - как? -->
+              <a class="navigation-authorization-link" href="#">
+                <svg class="navigation-authorization-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13"><path fill="#000" d="M0 12.787h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 2.387 3 4.287c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z"/></svg>
+                Войти</a> <!--Меняется на Колю Петухова - как? -->
             </li>
           </ul>
 
           <ul class="navigation-user-list">
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
+              <a class="navigation-user-link" href="#">
+                <svg class="navigation-user-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10" height="13" fill="none" viewBox="0 0 10 13"><path fill="#000" d="M6 .787H4v12h2v-12ZM2 4.787H0v8h2v-8ZM10 3.787H8v9h2v-9Z"/></svg>
+                Сравнить</a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Корзина</a><!-- предпочтительнее, чтобы это была кнопка, на которую ты нажимаешь, и открывается выпадающее меню;
+              <a class="navigation-user-link" href="#">
+                <svg class="navigation-user-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="#000" d="m15.3 5.787-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.687l2.2 3.2H5.9l2.1-3.2Z"/></svg>
+                Корзина</a><!-- предпочтительнее, чтобы это была кнопка, на которую ты нажимаешь, и открывается выпадающее меню;
               если это ссылка, то при наведении на неё открывается выпадающее меню -->
               <!-- <ul class="cart-list">
                 <li class="cart-item">
@@ -103,11 +110,15 @@
         <h2 class="visually-hidden">Популярные товары</h2>
 
         <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
+          <span class="visually-hidden">
+            <svg class="slider-button-prev" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z"/></svg>
+            Предыдущее фото</span>
         </button>
 
         <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
+          <span class="visually-hidden">
+            <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/></svg>
+            Следующее фото</span>
         </button>
 
         <figure class="popular-item">
@@ -240,9 +251,13 @@
       <section class="rare-preview">
         <h3 class="visually-hidden">Доставка на заказ</h3>
         <div class="rare-container">
-          <a class="rare-delivery" href="">Доставим редкий товар под заказ</a> <!-- Это ссыдка.
+          <div class="rare-truck"></div>
+          <div class="rare-delivery">
+            <a class="rare-delivery-link" href="">Доставим редкий товар под заказ</a> <!-- Это ссыдка.
             В случае, когда сработает JavaScript, откроется попап для заполнения формы.
             В противном случае пользователя можно перекинуть на отдельную страницу с данной формой. -->
+          </div>
+          <div class="rare-info"><svg  class="rare-info-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12"><g fill="#000" clip-path="url(#a)" opacity=".3"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h2v12H0z"/></clipPath></defs></svg></div>
         </div>
         <div class="rare">
           <h4 class="rare-title">Доставка под заказ</h4>
@@ -376,16 +391,19 @@
             то при чтении сайта скринридером, ссылки будут озвучены. -->
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
+                <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none" viewBox="0 0 14 12"><path fill="#444" d="M12.443.074.623 4.632c-.807.324-.802.774-.148.974l3.035.947 7.021-4.43c.332-.202.635-.093.386.128L5.228 7.385l-.209 3.129c.307 0 .442-.141.614-.307l1.474-1.433 3.066 2.264c.565.312.971.152 1.112-.523l2.013-9.485c.206-.826-.316-1.2-.855-.956Z"/></svg>
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
+                <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="11" fill="none" viewBox="0 0 16 11"><path fill="#444" d="M15.667 1.675a1.857 1.857 0 0 0-.51-.847 2.034 2.034 0 0 0-.893-.495c-1.252-.33-6.268-.33-6.268-.33a51.083 51.083 0 0 0-6.26.314 2.107 2.107 0 0 0-.892.506c-.246.238-.425.53-.518.851A19.393 19.393 0 0 0 0 5.337C-.008 6.564.101 7.79.326 8.999c.091.32.27.611.516.846.248.236.556.406.894.496 1.27.329 6.26.329 6.26.329 2.094.024 4.188-.08 6.268-.313.335-.087.642-.257.892-.495.244-.23.42-.524.51-.847.23-1.207.342-2.434.334-3.663a17.72 17.72 0 0 0-.333-3.678ZM6.402 7.619V3.055l4.173 2.282L6.402 7.62Z"/></svg>
                 <span class="visually-hidden">YouTube</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
+                <svg class="footer-social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15"><path fill="#444" d="M9.7.155c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/></svg>
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
