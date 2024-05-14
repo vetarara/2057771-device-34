@@ -69,10 +69,11 @@ body {
 
 .button {
   display: inline-block;
-  width: 208px;
-  height: 20px;
-  padding: 10px 6px;
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   line-height: 21px;
   background-color: transparent;
   color: #000000;
@@ -86,18 +87,17 @@ body {
 
 .button::after {
   content: ""; /* Обязательное свойство для псевдоэлемента */
-  position: absolute; /* Позиционируем относительно родительского элемента */
-  top: 30%; /* Положение относительно нижней границы родительского элемента */
-  left: 0; /* Положение относительно левой границы родительского элемента */
-  width: 100%; /* Ширина полоски равна ширине родительского элемента */
-  height: 8px; /* Толщина полоски */
-  background-color: rgba(255, 225, 127, 1); /* Цвет полоски */
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 225, 127, 1);
   z-index: -1;
 }
 
 .button:hover {
   background-color: rgba(255, 225, 127, 1);
-  bottom: 0;
 }
 
 .button:focus {
@@ -444,12 +444,12 @@ body {
 
 .service-button-container {
   position: relative;
-  min-height: 40px;
   text-align: center;
 }
 
 .service-button {
-  margin-right: 120px;
+  display: inline-block;
+  padding: 10px 120px 10px 0;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   font-size: 18px;
@@ -465,12 +465,43 @@ body {
 .service-button::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 35%;
   left: 0;
   width: 160px;
   height: 8px;
   background-color: rgba(255, 225, 127, 1);
   z-index: -1;
+}
+
+.service-button-container:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+.service-button:hover {
+  color: rgba(255, 225, 127, 0.5);
+}
+
+/* .service-button-container:focus {
+
+  background-color: rgba(0, 0, 0, 1);
+
+
+} */
+
+.service-button:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px rgba(175, 79, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 225, 127, 1);
+}
+
+.service-button-container:active {
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: none;
+}
+
+.service-button:active {
+  color: rgba(255, 225, 127, 0.3);
 }
 
 .service-button-container-current {
@@ -593,9 +624,22 @@ body {
   letter-spacing: -0.02em;
 }
 
+.button-rare-container {
+  position: relative;
+  width: 200px;
+  min-height: 40px;
+  text-align: center;
+}
+
 .rare-button {
+  width: 200px;
   grid-column: 1 / -1;
   justify-self: start;
+}
+
+.rare-button::after {
+  top: 15px;
+  left: 0;
 }
 
 /*о нас*/
@@ -637,23 +681,23 @@ body {
   margin-bottom: 19px;
   padding: 0;
   padding-left: 26px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.02em;
 }
 
 .about-delivery-item:last-child {
   margin-bottom: 0;
 }
 
-.about-delivery-link {
-  line-height: 20px;
-  text-decoration: none;
-  color: #000000;
-  letter-spacing: -0.02em;
+.button-more-container {
+  position: relative;
 }
 
 .button-more {
   min-width: 258px; /*возможно, лучше будет для баттон удказать одну минимальную ширину, и не указывать её для каждой кнопки отдельно*/
   padding: 10px 6px;
-  text-align: start;
+  text-align: center;
 }
 
 .about-contacts-title {
@@ -719,7 +763,7 @@ body {
 .button-connection {
   min-width: 258px; /*возможно, лучше будет для баттон удказать одну минимальную ширину, и не указывать её для каждой кнопки отдельно*/
   padding: 10px 6px;
-  text-align: start;
+  text-align: center;
 }
 
 /*блок подписки*/

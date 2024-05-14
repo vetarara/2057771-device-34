@@ -222,15 +222,15 @@
 
         <div class="service-container">
           <div class="service-buttons-container">
-            <span class="service-button-container service-button-container-current">
+            <div class="service-button-container service-button-container-current">
               <button class="service-button service-button-current" type="button">Доставка</button>
-            </span>
-            <span class="service-button-container">
+            </div>
+            <div class="service-button-container">
               <button class="service-button" type="button">Гарантия</button>
-            </span>
-            <span class="service-button-container">
+            </div>
+            <div class="service-button-container">
               <button class="service-button" type="button">Кредит</button>
-            </span>
+            </div>
           </div>
           <div class="service-description-container">
             <h3 class="service-name">Доставка</h3>
@@ -296,7 +296,9 @@
               <input type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" required>
             </p>
             <!-- тут ещё нет количества! -->
-            <button class="button rare-button" type="submit">Отправить</button>
+            <span class="button-rare-container">
+              <button class="button rare-button" type="submit">Отправить</button>
+            </span>
           </form>
         </div>
       </section>
@@ -311,17 +313,19 @@
 
           <ul class="about-delivery-list">
             <li class="about-delivery-item">
-              <a class="about-delivery-link" href="#"><strong>Меловые линии</strong></a>
+              <strong>Меловые линии</strong>
             </li>
             <li class="about-delivery-item">
-              <a class="about-delivery-link" href="#"><strong>СДИК</strong></a>
+              <strong>СДИК</strong>
             </li>
             <li class="about-delivery-item">
-              <a class="about-delivery-link" href="#"><strong>ТоксБерри</strong></a>
+              <strong>ТоксБерри</strong>
             </li>
           </ul>
 
-          <a class="button button-more" href="#">Подробнее о нас</a>
+          <span class="button-more-container">
+            <a class="button button-more" href="#">Подробнее о нас</a>
+          </span>
 
         </section>
 
@@ -349,7 +353,9 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="button button-connection" href="#">Напишите нам</a>
+          <span class="button-more-container">
+            <a class="button button-connection" href="#">Напишите нам</a>
+          </span>
         </section>
       </div>
 
