@@ -48,7 +48,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   background-color: #ffffff;
 }
 
@@ -76,7 +76,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: transparent;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -125,13 +125,13 @@ body {
 .main-header {
   width: 1160px;
   margin: 0 auto;
-  background-color: #ffe17f;
+  background-color: rgba(255, 225, 127, 1);
 }
 
 .inner-header {
   width: 1160px;
   margin: 0 auto;
-  background-color: #ffe17f;
+  background-color: rgba(255, 225, 127, 1);
 }
 
 .logo {
@@ -172,14 +172,14 @@ body {
 
 .search-icon {
   position: absolute;
-  fill: #000000;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .search-input {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   /*цвет всё равно не применяется именно к инпуту. он не чёрный. */
 }
 
@@ -205,12 +205,31 @@ body {
 
 .navigation-authorization-link {
   display: block;
-  min-width: 82px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 12px; /*это конкретно для кнопки "войти", без всяких Коль Петуховых, чётко по макету*/
+  position: relative;
+  padding: 5px 0 5px 27px; /*это конкретно для кнопки "войти", без всяких Коль Петуховых, чётко по макету*/
   color: inherit;
   text-decoration: none;
+}
+
+.navigation-authorization-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+  margin: auto;
+  fill: rgba(0, 0, 0, 1);
+}
+
+.navigation-authorization-link:hover .navigation-authorization-icon,
+.navigation-authorization-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+  fill: rgba(0, 0, 0, 0.7);
+}
+
+.navigation-authorization-link:active .navigation-authorization-icon,
+.navigation-authorization-link:active {
+  color: rgba(0, 0, 0, 0.4);
+  fill: rgba(0, 0, 0, 0.4);
 }
 
 .navigation-user-list {
@@ -224,9 +243,7 @@ body {
 }
 
 .navigation-user-item {
-  min-width: 105px;
-  margin-right: 18px;
-  padding: 5px 0 5px 12px;
+  margin-right: 36px;
 }
 
 .navigation-user-item:last-child {
@@ -234,8 +251,32 @@ body {
 }
 
 .navigation-user-link { /*сравнить, корзина*/
+  display: block;
+  position: relative;
+  padding: 5px 0 5px 27px;
   color: inherit;
   text-decoration: none;
+}
+
+.navigation-user-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+  margin: auto;
+  fill: rgba(0, 0, 0, 1);
+}
+
+.navigation-user-link:hover .navigation-user-icon,
+.navigation-user-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+  fill: rgba(0, 0, 0, 0.7);
+}
+
+.navigation-user-link:active .navigation-user-icon,
+.navigation-user-link:active {
+  color: rgba(0, 0, 0, 0.4);
+  fill: rgba(0, 0, 0, 0.4);
 }
 
 .cart-item-link {
@@ -260,7 +301,7 @@ body {
 .cart-link {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
@@ -342,7 +383,7 @@ body {
 }
 
 .slider-button-prev {
-  fill: #000000;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .popular-item {
@@ -437,7 +478,7 @@ body {
   left: 0;
   width: 100%;
   height: 289px;
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 1);
   z-index: -2;
 }
 
@@ -456,7 +497,7 @@ body {
   padding: 64px 0 65px 0;
   display: grid;
   grid-row-gap: 35px;
-  border-right: 7px solid #000000;
+  border-right: 7px solid rgba(0, 0, 0, 1);
 }
 
 /* .service-button-container {
@@ -471,7 +512,7 @@ body {
   line-height: 21px;
   font-size: 18px;
   background-color: transparent;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -510,8 +551,6 @@ body {
   color: rgba(255, 225, 127, 1);
 }
 
-
-
 .service-button-container:active {
   background-color: rgba(0, 0, 0, 1);
   box-shadow: none;
@@ -524,12 +563,13 @@ body {
 /* .service-button-container-current {
   margin-right: 0;
   width: 280px;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .service-button-current {
-  background-color: #000000;
-  color: #ffe17f;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 225, 127, 1)
+;
   height: 40px;
 } */
 
@@ -562,11 +602,11 @@ body {
   margin-bottom: 70px;
   display: flex;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 1);
 }
 
 .rare-truck {
-  background-color: #ffe17f;
+  background-color: rgba(255, 225, 127, 1);
   width: 125px;
   height: 100px;
   background-image: url("../images/rare-delivery/truck.svg");
@@ -676,7 +716,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
 .about-delivery-description {
@@ -699,7 +739,7 @@ body {
   padding: 0;
   padding-left: 26px;
   line-height: 20px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   letter-spacing: -0.02em;
 }
 
@@ -724,7 +764,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
 .about-contacts-description {
@@ -785,7 +825,7 @@ body {
 
 /*блок подписки*/
 .subscription {
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 1);
 }
 
 .subscription-container {
@@ -839,7 +879,7 @@ body {
 .page-footer {
   padding-top: 62px;
   padding-bottom: 61px;
-  background-color: #000000; /*исходный: 444444*/
+  background-color: rgba(0, 0, 0, 1); /*исходный: 444444*/
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -975,7 +1015,7 @@ body {
 }
 
 .inner-main-container {
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 1);
 }
 
 /*фильтр*/
@@ -1084,7 +1124,7 @@ body {
   margin-bottom: 0;
   font-weight: 700;
   line-height: 20px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   letter-spacing: -0.02em;
 }
 
