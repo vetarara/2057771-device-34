@@ -190,7 +190,7 @@ body {
   line-height: 20px;
 }
 
-.navigation-authorization-list { /*войти, выйти*/
+.navigation-login-list { /*войти, выйти*/
   margin: 0;
   padding: 0;
   padding-right: 150px; /*по макету - 150, мб нужно будет добавить на случай, если имя длиннее будет*/
@@ -199,11 +199,11 @@ body {
   list-style-type: none;
 }
 
-.navigation-authorization-item {
+.navigation-login-item {
   margin-right: 28px; /*это для Коли Петухова*/
 }
 
-.navigation-authorization-link {
+.navigation-login-link {
   display: block;
   position: relative;
   padding: 5px 0 5px 27px; /*это конкретно для кнопки "войти", без всяких Коль Петуховых, чётко по макету*/
@@ -211,7 +211,16 @@ body {
   text-decoration: none;
 }
 
-.navigation-authorization-icon {
+.navigation-logout-link {
+  display: block;
+  position: relative;
+  margin-right: 25px;
+  padding: 5px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation-login-icon {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -220,14 +229,16 @@ body {
   fill: rgba(0, 0, 0, 1);
 }
 
-.navigation-authorization-link:hover .navigation-authorization-icon,
-.navigation-authorization-link:hover {
+.navigation-login-link:hover .navigation-login-icon,
+.navigation-login-link:hover,
+.navigation-logout-link:hover {
   color: rgba(0, 0, 0, 0.7);
   fill: rgba(0, 0, 0, 0.7);
 }
 
-.navigation-authorization-link:active .navigation-authorization-icon,
-.navigation-authorization-link:active {
+.navigation-login-link:active .navigation-login-icon,
+.navigation-login-link:active,
+.navigation-logout-link:active {
   color: rgba(0, 0, 0, 0.4);
   fill: rgba(0, 0, 0, 0.4);
 }
