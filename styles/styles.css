@@ -134,22 +134,39 @@ body {
   background-color: #ffe17f;
 }
 
-.logo-header {
-  margin: 0 0 30px 60px;
-  position: relative;
-  top: -20px;
+.logo {
   display: block;
+  position: relative;
+  top: -22px;
+  left: 56px;
+  width: 145px;
+  height: 38px;
+  margin-bottom: 30px;
+  padding: 2px;
+  outline: none;
 }
 
-.logo-header:hover {
-  color: rgba(0, 0, 0, 1); /*не работает*/
+.logo:hover {
+  opacity: 0.7;
+}
+
+.logo:focus {
+  box-shadow: 0 0 0 2px rgba(175, 79, 255, 1);
+}
+
+.logo-header:focus {
+  opacity: 1;
+}
+
+.logo:active {
+  opacity: 0.3;
+  box-shadow: none;
 }
 
 .search-user-navigation {
   display: flex;
   width: 1040px;
   margin: 0 auto;
-  /* 0 убирает вертикальные отступы, auto выравнивает по центру */
   margin-bottom: 30px;
 }
 
@@ -442,19 +459,20 @@ body {
   border-right: 7px solid #000000;
 }
 
-.service-button-container {
+/* .service-button-container {
   position: relative;
   text-align: center;
 }
 
-.service-button {
-  display: inline-block;
-  padding: 10px 120px 10px 0;
+.service-button { пока оставляю этот момент, непонятно, как сделать.
+  display: block;
+  padding: 10px 120px 10px 10px;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   font-size: 18px;
   background-color: transparent;
   color: #000000;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -481,19 +499,18 @@ body {
   color: rgba(255, 225, 127, 0.5);
 }
 
-/* .service-button-container:focus {
-
+.service-button-container:focus {
   background-color: rgba(0, 0, 0, 1);
-
-
-} */
+}
 
 .service-button:focus {
   outline: none;
   box-shadow: inset 0 0 0 2px rgba(175, 79, 255, 1);
-  background-color: rgba(0, 0, 0, 1);
+
   color: rgba(255, 225, 127, 1);
 }
+
+
 
 .service-button-container:active {
   background-color: rgba(0, 0, 0, 1);
@@ -502,9 +519,9 @@ body {
 
 .service-button:active {
   color: rgba(255, 225, 127, 0.3);
-}
+} */
 
-.service-button-container-current {
+/* .service-button-container-current {
   margin-right: 0;
   width: 280px;
   background-color: #000000;
@@ -514,7 +531,7 @@ body {
   background-color: #000000;
   color: #ffe17f;
   height: 40px;
-}
+} */
 
 .service-description-container {
   width: 873px;
