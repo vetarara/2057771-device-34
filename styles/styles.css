@@ -168,6 +168,8 @@ body {
   width: 1040px;
   margin: 0 auto;
   margin-bottom: 30px;
+  /* для этого блока, вероятно, нужно будет добавить justify-content, чтобы "корзина" не выпадала из контейнера.
+  но это нужно будет сделать тогда, когда будет стилизована форма поиска. */
 }
 
 .search-icon {
@@ -194,7 +196,6 @@ body {
 .navigation-login-list {
   margin: 0;
   padding: 0;
-  padding-right: 150px; /*по макету - 150, мб нужно будет добавить на случай, если имя длиннее будет*/
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -207,16 +208,16 @@ body {
 .navigation-login-link {
   display: block;
   position: relative;
-  padding: 5px 0 5px 27px;
+  padding: 2px 0 2px 26px;
   color: inherit;
   text-decoration: none;
 }
 
-.navigation-logout-link {
+.navigation-logout-link { /* выйти */
   display: block;
   position: relative;
   margin-right: 25px;
-  padding: 5px 0;
+  padding: 2px 0;
   color: inherit;
   text-decoration: none;
 }
@@ -228,6 +229,11 @@ body {
   left: 2px;
   margin: auto;
   fill: rgba(0, 0, 0, 1);
+}
+/* состояния для войти и выйти, Коля Петухов */
+.navigation-login-link:focus,
+.navigation-logout-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .navigation-login-link:hover .navigation-login-icon,
@@ -242,6 +248,7 @@ body {
 .navigation-logout-link:active {
   color: rgba(0, 0, 0, 0.4);
   fill: rgba(0, 0, 0, 0.4);
+  outline: none;
 }
 
 /* сравнить, корзина */
@@ -259,40 +266,40 @@ body {
   margin-right: 36px;
 }
 
-/* это - для "войти" и "сравнить" */
+/* сравнить */
 .navigation-user-link {
   display: block;
   position: relative;
-  padding: 5px 0 0 27px;
+  padding: 2px 2px 2px 26px;
   color: inherit;
   text-decoration: none;
 }
 
 .navigation-user-icon {
   position: absolute;
-  top: 13px;
-  left: 0;
+  top: 10px;
+  left: 2px;
   margin: auto;
   fill: rgba(0, 0, 0, 1);
 }
 
-/* это - для корзины */
-
+/* корзина */
 .navigation-user-link.cart-link {
-  padding-left: 40px;
+  padding-right: 14px;
+  padding-left: 44px;
 }
 
 .navigation-user-icon.cart-icon {
-  top: 11px;
-  left: 15px;
+  top: 9px;
+  left: 18px;
 }
 
 .navigation-user-quantity {
   position: absolute;
-  top: 11px;
-  left: 0;
-  width: 21px; /* Диаметр круга */
-  height: 21px; /* Диаметр круга */
+  top: 8px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
@@ -302,7 +309,11 @@ body {
   z-index: 1;
 }
 
-/* состояния пока не трогаем. вероятно, тут нужно будет только добавить классы */
+/* состояния для сравнить и корзина */
+.navigation-user-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
 .navigation-user-link:hover .navigation-user-icon,
 .navigation-user-link:hover .navigation-user-quantity,
 .navigation-user-link:hover {
@@ -315,15 +326,15 @@ body {
 .navigation-user-link:active {
   color: rgba(0, 0, 0, 0.4);
   fill: rgba(0, 0, 0, 0.4);
-  box-shadow: none;
+  outline: none;
 }
 
+/* модальное окно корзины */
 .cart-item-link {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
 }
-
 /*возможно, правила выше и ниже можно задать для всего блока раскрытой корзины. посмотрим. */
 .cart-quantity {
   font-size: 16px;
@@ -346,6 +357,7 @@ body {
   letter-spacing: 0.2em;
 }
 
+/* каталог товаров - навигация */
 .navigation-container {
   width: 1040px;
   padding-left: 60px;
@@ -382,8 +394,7 @@ body {
 }
 
 .navigation-catalog-open:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(175, 79, 255, 1);
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .navigation-catalog-open:focus .navigation-catalog-open-icon {
@@ -395,33 +406,35 @@ body {
 }
 
 .navigation-catalog-open:active {
-  box-shadow: none;
+  outline: none;
 }
 
 .navigation-catalog-open:active .navigation-catalog-open-icon {
   opacity: 1;
 }
 
+.navigation-catalog-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* доставка - гарантия - контакты (навигация) */
 .navigation-info-list {
   min-width: 472px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
 }
 
-.navigation-info-item {
-  margin-right: 45px;
-}
-
-.navigation-info-item:last-child {
-  margin-right: 0;
-}
-
 .navigation-info-link {
-  padding: 14px 0;
   display: block;
+  margin: 12px;
+  padding: 2px 0;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   text-align: right;
@@ -431,11 +444,17 @@ body {
   letter-spacing: 0.2em;
 }
 
-.navigation-catalog-link {
-  font-size: 16px;
-  line-height: 18px;
-  color: inherit;
-  text-decoration: none;
+.navigation-info-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.navigation-info-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navigation-info-link:active {
+  color: rgba(0, 0, 0, 0.4);
+  outline: none;
 }
 
 .main-container {
