@@ -262,15 +262,13 @@
 
       <section class="rare-preview">
         <h3 class="visually-hidden">Доставка на заказ</h3>
-        <div class="rare-container">
-          <div class="rare-truck"></div>
-          <div class="rare-delivery">
-            <a class="rare-delivery-link" href="">Доставим редкий товар под заказ</a> <!-- Это ссыдка.
-            В случае, когда сработает JavaScript, откроется попап для заполнения формы.
-            В противном случае пользователя можно перекинуть на отдельную страницу с данной формой. -->
-          </div>
-          <div class="rare-info"><svg  class="rare-info-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12"><g fill="#000" clip-path="url(#a)" opacity=".3"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h2v12H0z"/></clipPath></defs></svg></div>
-        </div>
+        <button class="rare-delivery-link" href="">
+            <span class="rare-truck"></span>
+            <span class="rare-delivery-title">Доставим редкий товар под заказ</span>
+            <span class="rare-info">
+              <img class="rare-info-icon" src="images/rare-delivery/info.svg" width="2" height="12">
+            </span>
+          </button>
         <div class="rare">
           <h4 class="rare-title">Доставка под заказ</h4>
           <form class="rare-form" action="https://echo.htmlacademy.ru/" method="post">
