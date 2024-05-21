@@ -552,17 +552,87 @@ body {
   list-style-type: none;
 }
 
+.categories-item {
+
+}
+
 .categories-link {
   max-width: 160px;
-  min-height: 60px;
-  padding-top: 192px;
-  display: block;
+  padding-bottom: 18px;
+  display: grid;
+  gap: 32px;
   font-family: "Raleway", sans-serif;
   line-height: 24px;
   text-decoration: none;
   color: inherit;
   letter-spacing: -0.02em;
 }
+
+.categories-link-icon-container {
+  position: relative;
+  background-color: rgba(255, 225, 127, 1);
+  width: 160px;
+  height: 160px;
+}
+
+.categories-link-icon {
+  position: absolute;
+}
+
+.icon-vr {
+  top: 53px;
+  left: 32px;
+}
+
+.icon-monopods {
+  top: 43px;
+  left: 37px;
+}
+
+.icon-action {
+  top: 36px;
+  left: 44px;
+}
+
+.icon-fitness {
+  top: 47px;
+  left: 25px;
+}
+
+.icon-clocks {
+  top: 31px;
+  left: 52px;
+}
+
+.icon-quadcopters {
+  top: 45px;
+  left: 14px;
+}
+
+.categories-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.categories-link:hover {
+  outline: none;
+}
+
+.categories-link:hover .categories-link-icon-container {
+  background-color: rgba(255, 199, 0, 1);
+}
+
+.categories-link:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.categories-link:active .categories-link-icon-container {
+  background-color: rgba(255, 225, 127, 1);
+}
+
+/* состояния для категорий */
+
 
 /*сервис*/
 .service {
