@@ -1310,6 +1310,11 @@ body {
   list-style-type: none;
 }
 
+.product-card-link {
+  text-decoration: none;
+  display: block;
+}
+
 .product-card-image {
   display: block;
   margin-bottom: 32px;
@@ -1320,10 +1325,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-grow: 1;
-}
-
-.product-card-title-link {
-  text-decoration: none;
 }
 
 .product-card-title {
@@ -1340,6 +1341,21 @@ body {
   text-align: right;
   color: #444444;
   font-weight: normal;
+}
+
+.product-card-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.product-card-link:hover {
+  opacity: 0.7;
+  outline: none;
+}
+
+.product-card-link:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 /*пагинация*/
