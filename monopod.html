@@ -215,12 +215,12 @@
                 <option value="expensive">Сначала дорогое</option>
               </select>
               <div class="select-buttons">
-                <a href="#" class="button-up">
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10"><g clip-path="url(#a)" opacity=".2"><path fill="#000" d="m6 0 5.5 10H.5"/></g><defs><clipPath id="a"><path fill="#fff" d="M.5 0h11v10H.5z"/></clipPath></defs></svg>
+                <a href="#" class="button-up select-button">
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10"><path fill="#000" d="m6 0 5.5 10H.5"/></svg>
                   <span class="visually-hidden">Вверх</span>
                 </a>
-                <a href="#" class="button-down">
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10"><g clip-path="url(#a)" opacity=".2"><path fill="#000" d="M6 10 .5 0h11"/></g><defs><clipPath id="a"><path fill="#fff" d="M11.5 10H.5V0h11z"/></clipPath></defs></svg>
+                <a href="#" class="button-down select-button">
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10"><g clip-path="url(#a)"><path fill="#000" d="M6 10 .5 0h11"/></g><defs><clipPath id="a"><path fill="#fff" d="M11.5 10H.5V0h11z"/></clipPath></defs></svg>
                   <span class="visually-hidden">Вниз</span>
                 </a>
               </div>
@@ -270,36 +270,26 @@
               </div>
 
 
-              <button class="pagination-show-more" type="button">Загрузить ещё</button>
+              <button class="show-more" type="button">Загрузить ещё</button>
 
               <div class="pagination">
                 <button class="pagination-button" type="button">Назад</button>
 
                 <ol class="pagination-list">
                   <li class="pagination-item">
-                    <a class="pagination-link-text pagination-prev pagination-disabled">
-                      <span class="visually-hidden">Предыдущая страница</span>
-                    </a>
+                    <a class="pagination-link pagination-current" href="#" type="button">1</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link pagination-current"  type="button">1</a>
+                    <a class="pagination-link" href="#" type="button">2</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" type="button">2</a>
+                    <a class="pagination-link" href="#" type="button">3</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link"  type="button">3</a>
+                    <a class="pagination-link" href="#" type="button">...</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link"  type="button">...</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link"  type="button">15</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link pagination-next"  type="button">
-                      <span class="visually-hidden">Следующая страница</span>
-                    </a>
+                    <a class="pagination-link" href="#" type="button">15</a>
                   </li>
                 </ol>
 

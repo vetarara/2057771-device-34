@@ -1279,16 +1279,34 @@ body {
 
 .select-buttons {
   display: flex;
+
 }
 
 .button-up {
-  width: 30px;
-  height: 30px;
+  margin: 0 2px;
+  padding: 0 8px;
+  opacity: 0.2;
 }
 
 .button-down {
-  width: 30px;
-  height: 30px;
+  margin: 0 2px;
+  padding: 0 8px;
+  opacity: 0.2;
+}
+
+.select-button:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.select-button:hover {
+  opacity: 0.5;
+  outline: none;
+}
+
+.select-button:active {
+  opacity: 1;
+  outline: none;
 }
 
 /*карточки товаров*/
@@ -1359,8 +1377,8 @@ body {
 }
 
 /*пагинация*/
-.pagination-show-more {
-  width: 760px;
+.show-more {
+  min-width: 760px;
   margin-bottom: 44px;
   padding: 18px 39px;
   border: 3px solid #e5e5e5;
@@ -1373,10 +1391,27 @@ body {
   background-color: #ffffff;
 }
 
+.show-more:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.show-more:hover {
+  border-color: rgba(0, 0, 0, 1);
+  outline: none;
+}
+
+.show-more:active {
+  opacity: 0.3;
+  border-color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
 .pagination {
   margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(235, 235, 235, 1);
 }
 
 .pagination-list {
@@ -1384,24 +1419,71 @@ body {
   padding: 15px 0;
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 .pagination-button {
   padding: 25px;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+  border: none;
+  background-color: rgba(235, 235, 235, 1);
 }
 
-.pagination-link {
+.pagination-button:focus {
+  background-color: rgba(240, 240, 240, 1);
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.pagination-button:hover {
+  background-color: rgba(220, 220, 220, 1);
+  outline: none;
+}
+
+.pagination-button:active {
+  opacity: 0.3;
+  background-color: rgba(220, 220, 220, 1);
+  outline: none;
+}
+/*
+.pagination-item {
   display: block;
+
+} */
+
+.pagination-link {
   width: 40px;
-  height: 40px; /*именно так, а не паддингами, т.к. у "15" паддинги слева и справа будут меньше*/
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.3);
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.pagination-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.pagination-link:hover {
+  color: rgba(68, 68, 68, 1);
+  outline: none;
+}
+
+.pagination-link:active {
+  color: rgba(68, 68, 68, 0.1);
+  outline: none;
 }
