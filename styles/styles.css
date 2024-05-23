@@ -49,7 +49,7 @@ body {
   line-height: 30px;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .visually-hidden {
@@ -155,7 +155,7 @@ body {
 }
 
 .logo:hover {
-  opacity: 0.7;
+  opacity: 0.5;
   outline: none;
 }
 
@@ -1085,7 +1085,7 @@ body {
   background-color: rgba(68, 68, 68, 1);
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .footer-container {
@@ -1093,15 +1093,47 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .logo-footer {
   display: block;
+  width: 145px;
+}
+
+.logo-footer:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.logo-footer:hover {
+  opacity: 0.5;
+  outline: none;
+}
+
+.logo-footer:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 .footer-contact-address-text {
   color: inherit;
   font-style: normal;
+}
+
+.line-container {
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  bottom: 0;
+}
+
+.line-container::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 7px;
+  background-color: rgba(255, 197, 0, 1);
 }
 
 .footer-navigation {
@@ -1132,6 +1164,29 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+}
+
+.footer-service-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.footer-service-link:hover {
+  color: rgba(255, 199, 0, 1);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 199, 0, 1);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  outline: none;
+}
+
+.footer-service-link:active {
+  color: rgba(255, 199, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 199, 0, 0.3);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  outline: none;
 }
 
 .footer-social-list {
@@ -1203,9 +1258,50 @@ body {
   font-style: normal;
 }
 
-.logo-htmlacademy {
-  padding-left: 60px;
+.footer-contact-number-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.footer-contact-number-link:hover {
+  color: rgba(255, 199, 0, 1);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 199, 0, 1);
+  outline: none;
+}
+
+.footer-contact-number-link:active {
+  color: rgba(255, 199, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 199, 0, 0.3);
+  outline: none;
+}
+
+.htmlacademy-link {
   display: block;
+  position: relative;
+}
+
+.logo-htmlacademy {
+  position: absolute;
+  left: 60px;
+  display: block;
+  fill: rgba(255, 199, 0, 1);
+}
+
+.htmlacademy-link:focus .logo-htmlacademy {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.htmlacademy-link:hover .logo-htmlacademy {
+  fill: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.htmlacademy-link:active .logo-htmlacademy {
+  fill: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 /*внутренняя страница: моноподы для селфи*/
@@ -1336,7 +1432,7 @@ body {
 /*карточки товаров*/
 .product {
   padding: 70px 40px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .product-cards {
@@ -1412,7 +1508,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .show-more:focus {
