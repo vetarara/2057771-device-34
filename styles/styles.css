@@ -666,14 +666,14 @@ body {
   border-right: 7px solid rgba(0, 0, 0, 1);
 }
 
-/* .service-button-container {
+.service-button-container {
   position: relative;
-  text-align: center;
 }
 
-.service-button { пока оставляю этот момент, непонятно, как сделать.
+.service-button {
   display: block;
-  padding: 10px 120px 10px 10px;
+  width: 160px;
+  height: 40px;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   font-size: 18px;
@@ -690,7 +690,7 @@ body {
 .service-button::after {
   content: "";
   position: absolute;
-  top: 35%;
+  top: 15px;
   left: 0;
   width: 160px;
   height: 8px;
@@ -698,51 +698,76 @@ body {
   z-index: -1;
 }
 
-.service-button-container:hover {
-  background: rgba(0, 0, 0, 1);
+.service-button:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .service-button:hover {
-  color: rgba(255, 225, 127, 0.5);
-}
-
-.service-button-container:focus {
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.service-button:focus {
+  background-color: rgba(255, 225, 127, 1);
   outline: none;
-  box-shadow: inset 0 0 0 2px rgba(175, 79, 255, 1);
-
-  color: rgba(255, 225, 127, 1);
-}
-
-.service-button-container:active {
-  background-color: rgba(0, 0, 0, 1);
-  box-shadow: none;
 }
 
 .service-button:active {
-  color: rgba(255, 225, 127, 0.3);
-} */
+  background-color: rgba(255, 204, 51, 1);
+  outline: none;
+}
 
-/* .service-button-container-current {
-  margin-right: 0;
-  width: 280px;
+.service-button-container-current {
   background-color: rgba(0, 0, 0, 1);
 }
 
 .service-button-current {
-  background-color: rgba(0, 0, 0, 1);
-  color: rgba(255, 225, 127, 1)
-;
-  height: 40px;
-} */
+  color: rgba(255, 225, 127, 1);
+}
+
+.service-button-current::after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+.service-button-container-current .current-focus-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 2px solid transparent;
+  pointer-events: none;
+}
+
+.service-button-current:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.service-button-current:focus + .current-focus-effect {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.service-button-current:hover {
+  color: rgba(255, 225, 127, 0.5);
+  background-color: transparent;
+}
+
+.service-button-current:hover + .current-focus-effect {
+  outline: none;
+}
+
+.service-button-current:active {
+  color: rgba(255, 225, 127, 0.3);
+  background-color: transparent;
+}
+
+.service-button-current:active + .current-focus-effect {
+  outline: none;
+}
 
 .service-description-container {
   width: 873px;
   margin: 0 auto;
-  padding: 78px 63px 78px 116px; /*думаю, эта строка окажется лишней при добавлении svg*/
+  padding: 72px 63px 78px 0;
 }
 
 .service-name {
@@ -1000,6 +1025,11 @@ body {
   font-style: normal;
 }
 
+.about-contacts-number:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
 .about-contacts-schedule {
   margin: 0;
   margin-bottom: 15px;
@@ -1129,7 +1159,7 @@ body {
 }
 
 .line-container::after {
-  content: '';
+  content: "";
   display: block;
   width: 80px;
   height: 7px;
@@ -1287,6 +1317,10 @@ body {
   left: 60px;
   display: block;
   fill: rgba(255, 199, 0, 1);
+}
+
+.htmlacademy-link:focus {
+  outline: none;
 }
 
 .htmlacademy-link:focus .logo-htmlacademy {
