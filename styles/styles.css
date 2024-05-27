@@ -665,6 +665,7 @@ body {
   border-right: 7px solid rgba(0, 0, 0, 1);
 }
 
+/* стили для обычных кнопок */
 .service-button-container {
   position: relative;
 }
@@ -697,6 +698,7 @@ body {
   z-index: -1;
 }
 
+/* стили состояний для обычных кнопок */
 .service-button:focus {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
@@ -711,6 +713,7 @@ body {
   outline: none;
 }
 
+/* стили для кнопки текущего раздела */
 .service-button-container-current {
   background-color: rgba(0, 0, 0, 1);
 }
@@ -719,30 +722,18 @@ body {
   color: rgba(255, 225, 127, 1);
 }
 
-.service-button-current::after {
-  content: "";
-  width: 0;
-  height: 0;
-}
-
-.service-button-container-current .current-focus-effect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  outline: 2px solid transparent;
-  pointer-events: none;
+/* стили для состояний кнопки текущего раздела */
+.service-button-container-current:focus-within {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
 }
 
 .service-button-current:focus {
-  background-color: transparent;
   outline: none;
 }
 
-.service-button-current:focus + .current-focus-effect {
-  outline: 2px solid rgba(175, 79, 255, 1);
-  outline-offset: 2px;
+.service-button-container-current:hover {
+  outline: none;
 }
 
 .service-button-current:hover {
@@ -750,17 +741,13 @@ body {
   background-color: transparent;
 }
 
-.service-button-current:hover + .current-focus-effect {
+.service-button-container-current:active {
   outline: none;
 }
 
 .service-button-current:active {
   color: rgba(255, 225, 127, 0.3);
   background-color: transparent;
-}
-
-.service-button-current:active + .current-focus-effect {
-  outline: none;
 }
 
 .service-description-container {
