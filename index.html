@@ -110,32 +110,60 @@
     <main class="main-container main-index"> <!--  main-container - класс, который отвечает за стики-футер -->
       <section class="popular">
         <h2 class="visually-hidden">Популярные товары</h2>
-
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">
-            <svg class="slider-button-prev" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z"/></svg>
-            Предыдущее фото</span>
-        </button>
-
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">
-            <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/></svg>
-            Следующее фото</span>
-        </button>
-
-        <figure class="popular-item">
-          <div class="popular-container">
-            <figcaption class="visually-hidden">Квадрокоптер</figcaption>
-            <img class="popular-image" src="images/slider/quadcopter.png" width="560" height="560"
-              alt="Чёрно-белый квадрокоптер с лазером">
+        <div class="slide-number">
+          <div class="slide-number-wrapper">
+            <span class="slide-number-text slide-number-text-current">01</span>
           </div>
+        </div>
+        <div class="popular-item">
+
+          <div class="slider">
+            <h3 class="visually-hidden">Квадрокоптер</h3>
+            <img class="slider-image" src="images/slider/quadcopter.png" width="530" height="560" alt="Чёрно-белый квадрокоптер с лазером">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <svg class="slider-button-prev" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z"/></svg>
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+
+              <button class="slider-button slider-next" type="button">
+                <svg class="slider-button-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"/></svg>
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+          </div>
+
           <div class="popular-container">
             <p class="popular-slogan"><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
-            <p class="popular-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером,
-              замаскированным под стандартную камеру.</p>
-            <span class="button-container">
-              <a class="button popular-link" href="#">Подробнее</a>
-            </span>
+            <p class="popular-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+            <div class="popular-buttons">
+              <span class="button-container">
+                <a class="button popular-link" href="#">Подробнее</a>
+              </span>
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="slider-pagination-button-circle slider-pagination-button-circle-current">
+                      <span class="visually-hidden">1 фото</span>
+                    </span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="slider-pagination-button-circle">
+                      <span class="visually-hidden">2 фото</span>
+                    </span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="slider-pagination-button-circle">
+                      <span class="visually-hidden">3 фото</span>
+                    </span>
+                  </button>
+                </li>
+              </ol>
+            </div>
             <table class="popular-table">
               <tr>
                 <td class="popular-value">800 м</td>
@@ -147,11 +175,11 @@
               </tr>
             </table>
           </div>
-        </figure>
+        </div>
         <!-- ЗАКОММЕНТИРОВАНО, ЧТОБЫ ПОНЯТЬ, КАК РАССТАВИТЬ ХОТЯ БЫ ОДИН popular-item!
-        <figure class="popular-item"> <!-- Как сделать так, чтобы применились новые настройки editorcofig?
-          <figcaption class="visually-hidden">Фитнес-браслет</figcaption>
-          <img class="popular-image" src="images/slider/fitness-bracelet.png" width="560" height="560" alt="Чёрный фитнес-браслет с надписью: Я вижу, что ты снова ешь :(">
+        <div class="popular-item">
+          <h3 class="visually-hidden">Фитнес-браслет</h3>
+          <img class="popular-image" src="images/slider/fitness-bracelet.png" width="530" height="560" alt="Чёрный фитнес-браслет с надписью: Я вижу, что ты снова ешь :(">
           <p class="popular-slogan"><b>Худеем<br>правильно!</b></p>
           <p class="popular-description">Мотивирующие фитнес-браслеты помогут найти в себе<br>силы не пропускать занятия и соблюдать диету.</p>
           <a class="button popular-link" href="#">Подробнее</a>
@@ -163,11 +191,11 @@
               <td class="popular-parameter">Без подзарядки</td>
             </tr>
           </table>
-        </figure>
+        </div>
 
-        <figure class="popular-item">
-          <figcaption class="visually-hidden">Длинная селфи-палка</figcaption>
-          <img class="popular-image" src="images/slider/selfie-stick.png" width="560" height="560" alt="Три чёрные селфи-палки с синими элементами">
+        <div class="popular-item">
+          <h3 class="visually-hidden">Длинная селфи-палка</h3>
+          <img class="popular-image" src="images/slider/selfie-stick.png" width="530" height="560" alt="Три чёрные селфи-палки с синими элементами">
           <p class="popular-slogan"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
           <p class="popular-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="button popular-link" href="#">Подробнее</a>
@@ -183,7 +211,7 @@
               <td class="popular-parameter">Материал</td>
             </tr>
           </table>
-        </figure>
+        </div>
 -->
       </section>
 
