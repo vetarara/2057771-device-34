@@ -97,18 +97,11 @@ body {
 }
 
 .button:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: none;
 }
 
-.button:focus::after {
-  content: "";
-  position: absolute; /* Позиционируем относительно родительского элемента */
-  top: center; /* Положение относительно нижней границы родительского элемента */
-  left: 0; /* Положение относительно левой границы родительского элемента */
-  width: 100%; /* Ширина полоски равна ширине родительского элемента */
-  height: 8px; /* Толщина полоски */
-  background-color: rgba(255, 225, 127, 1); /* Цвет полоски */
-  z-index: -1;
+.button:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .button:hover {
@@ -145,6 +138,10 @@ body {
 }
 
 .logo:focus {
+  outline: none;
+}
+
+.logo:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
   opacity: 1;
@@ -229,6 +226,11 @@ body {
 /* состояния для войти и выйти, Коля Петухов */
 .navigation-login-link:focus,
 .navigation-logout-link:focus {
+  outline: none;
+}
+
+.navigation-login-link:focus-visible,
+.navigation-logout-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -309,6 +311,10 @@ body {
 
 /* состояния для сравнить и корзина */
 .navigation-user-link:focus {
+  outline: none;
+}
+
+.navigation-user-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -394,11 +400,15 @@ body {
 }
 
 .navigation-catalog-open:focus {
+  outline: none;
+}
+
+.navigation-catalog-open:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
 
-.navigation-catalog-open:focus .navigation-catalog-open-icon {
+.navigation-catalog-open:focus-visible .navigation-catalog-open-icon {
   opacity: 0.3;
 }
 
@@ -473,6 +483,10 @@ body {
 }
 
 .navigation-info-link:focus {
+  outline: none;
+}
+
+.navigation-info-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -567,8 +581,8 @@ body {
   outline: none;
 }
 
-.slider-button:focus .slider-button-prev,
-.slider-button:focus .slider-button-next {
+.slider-button:focus-visible .slider-button-prev,
+.slider-button:focus-visible .slider-button-next {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -663,6 +677,10 @@ body {
 }
 
 .slider-pagination-button:focus {
+  outline: none;
+}
+
+.slider-pagination-button:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -767,6 +785,10 @@ body {
 }
 
 .categories-link:focus {
+  outline: none;
+}
+
+.categories-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -862,6 +884,10 @@ body {
 
 /* стили состояний для обычных кнопок */
 .service-button:focus {
+  outline: none;
+}
+
+.service-button:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
 
@@ -995,6 +1021,10 @@ body {
 }
 
 .rare-delivery-link:focus {
+  outline: none;
+}
+
+.rare-delivery-link:focus-visible {
   background-color: rgba(240, 240, 240, 0.9);
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
@@ -1174,6 +1204,10 @@ body {
 }
 
 .about-contacts-number:focus {
+  outline: none;
+}
+
+.about-contacts-number:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1280,6 +1314,10 @@ body {
 }
 
 .logo-footer:focus {
+  outline: none;
+}
+
+.logo-footer:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1345,6 +1383,10 @@ body {
 }
 
 .footer-service-link:focus {
+  outline: none;
+}
+
+.footer-service-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1402,6 +1444,10 @@ body {
 }
 
 .footer-social-link:focus {
+  outline: none;
+}
+
+.footer-social-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1437,6 +1483,10 @@ body {
 }
 
 .footer-contact-number-link:focus {
+  outline: none;
+}
+
+.footer-contact-number-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1471,7 +1521,7 @@ body {
   outline: none;
 }
 
-.htmlacademy-link:focus .logo-htmlacademy {
+.htmlacademy-link:focus-visible .logo-htmlacademy {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1597,6 +1647,10 @@ body {
 }
 
 .select-button:focus {
+  outline: none;
+}
+
+.select-button:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1664,6 +1718,10 @@ body {
 }
 
 .product-card-link:focus {
+  outline: none;
+}
+
+.product-card-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1694,6 +1752,10 @@ body {
 }
 
 .show-more:focus {
+  outline: none;
+}
+
+.show-more:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1737,6 +1799,10 @@ body {
 }
 
 .pagination-button:focus {
+  outline: none;
+}
+
+.pagination-button:focus-visible {
   background-color: rgba(240, 240, 240, 1);
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
@@ -1771,6 +1837,10 @@ body {
 }
 
 .pagination-link:focus {
+  outline: none;
+}
+
+.pagination-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
