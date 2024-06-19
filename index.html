@@ -26,7 +26,6 @@
               <input class="search-input" type="search" placeholder="Текст поиска">
             </label>
             <button class="search-button" type="button">Найти</button>
-            <!-- Какие типы ещё бывают:  button | reset | submit -->
           </form>
 
           <ul class="navigation-login-list">
@@ -115,8 +114,8 @@
             <span class="slide-number-text slide-number-text-current">01</span>
           </div>
         </div>
-        <div class="popular-item">
 
+        <div class="popular-item">
           <div class="slider">
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <img class="slider-image" src="images/slider/quadcopter.png" width="530" height="560" alt="Чёрно-белый квадрокоптер с лазером">
@@ -343,23 +342,28 @@
             </span>
           </button>
         <div class="rare">
-          <h4 class="rare-title">Доставка под заказ</h4>
           <form class="rare-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group rare-form-header">
+              <h4 class="rare-title">Доставка под заказ</h4>
+              <svg class="form-close" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><g clip-path="url(#a)"><path d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z"/></g><defs><clipPath id="a"><path d="M0 0h26v26H0z"/></clipPath></defs></svg>
+            </div>
             <p class="field-group rare-form-name">
               <label class="rare-data" for="rare-userame">Ваше имя:</label>
-              <input type="text" name="userame" id="rare-userame" placeholder="Введите имя" required>
+              <input class="rare-input" type="text" name="userame" id="rare-userame" placeholder="Введите имя" required>
             </p>
             <p class="field-group rare-form-email">
               <label class="rare-data" for="rare-email">Ваш e-mail:</label>
-              <input type="email" name="email" id="rare-email" placeholder="Например, example@email.com" required>
+              <input class="rare-input" type="email" name="email" id="rare-email" placeholder="Например, example@email.com" required>
             </p>
             <p class="field-group rare-form-product">
               <label class="rare-data" for="rare-order">Что нужно привезти:</label>
-              <input type="text" name="order" id="rare-order" placeholder="В свободной форме" required>
+              <input class="rare-input" type="text" name="order" id="rare-order" placeholder="В свободной форме" required>
             </p>
             <p class="field-group rare-form-quantity">
-              <label class="rare-data" for="rare-order">Количество</label>
-              <input type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" required>
+              <label class="rare-data" for="rare-order">Количество:
+                <span class="rare-data-icon"></span>
+              </label>
+              <input class="rare-input" type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" required>
             </p>
             <!-- тут ещё нет количества! -->
             <span class="button-rare-container">
@@ -439,7 +443,6 @@
           <span class="subscription-advantage">Это бесплатно</span>
         </div>
       </section>
-
     </main>
 
     <footer class="page-footer">
@@ -508,7 +511,5 @@
         </section>
       </div>
     </footer>
-
   </body>
-
 </html>

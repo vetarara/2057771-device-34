@@ -1069,6 +1069,10 @@ body {
   flex-direction: column;
 }
 
+.rare-form-header {
+  grid-column: 1 / 4;
+}
+
 .rare-form-email {
   grid-column: 2 / 4;
 }
@@ -1081,10 +1085,39 @@ body {
   grid-column: 3 / 4;
 }
 
+.form-close {
+  fill: rgba(0, 0, 0, 1);
+}
+
 .rare-data {
+  margin-bottom: 14px;
+  position: relative;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
+}
+
+.rare-data-icon {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-left: 8px;
+  bottom: -3px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../images/rare-delivery/form-info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rare-input {
+  margin: 0;
+  padding: 20px;
+  font: inherit;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(240, 240, 240, 1);
+  border: none;
 }
 
 .button-rare-container {
