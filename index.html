@@ -20,12 +20,14 @@
         </a>
 
         <div class="search-user-navigation">
-          <form action="#" method="post">
-            <label class="">
-              <svg  class="search-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17"><g clip-path="url(#a)"><path fill="#000" d="m15.7 15.002-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.702c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 .702h16v16H0z"/></clipPath></defs></svg>
-              <input class="search-input" type="search" placeholder="Текст поиска">
+          <form class="search" action="#" method="post">
+            <label class="search-label">
+              <input class="search-input" type="search" placeholder="Поиск по сайту">
+              <svg class="search-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor" viewBox="0 0 16 17"><g clip-path="url(#a)"><path d="m15.7 15.002-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.702c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"/></g><defs><clipPath id="a"><path d="M0 .702h16v16H0z"/></clipPath></defs></svg>
             </label>
-            <button class="search-button" type="button">Найти</button>
+            <span class="search-button-wrapper">
+              <button class="search-button" type="button">Найти</button>
+            </span>
           </form>
 
           <ul class="navigation-login-list">
@@ -345,7 +347,7 @@
           <form class="rare-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group rare-form-header">
               <h4 class="rare-title">Доставка под заказ</h4>
-              <svg class="form-close" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><g clip-path="url(#a)"><path d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z"/></g><defs><clipPath id="a"><path d="M0 0h26v26H0z"/></clipPath></defs></svg>
+              <svg class="form-close" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_39699_561)"><path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z"/></g><defs><clipPath id="clip0_39699_561"><rect width="26" height="26"/></clipPath></defs></svg>
             </div>
             <p class="field-group rare-form-name">
               <label class="rare-data" for="rare-userame">Ваше имя:</label>
@@ -363,7 +365,7 @@
               <label class="rare-data" for="rare-order">Количество:
                 <span class="rare-data-icon"></span>
               </label>
-              <input class="rare-input" type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" required>
+              <input class="rare-input" type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" disabled>
             </p>
             <!-- тут ещё нет количества! -->
             <span class="button-rare-container">
@@ -435,7 +437,7 @@
           <p class="subscription-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
             распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="">
+            <label>
               <input class="subscription-input" type="email" placeholder="Ваш e-mail">
             </label>
             <button class="subscription-button" type="submit">Подписаться</button>

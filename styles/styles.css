@@ -166,24 +166,90 @@ body {
   но это нужно будет сделать тогда, когда будет стилизована форма поиска. */
 }
 
+.search {
+  display: flex;
+  margin-right: 26px;
+}
+
+.search-label {
+  flex-grow: 1;
+  position: relative;
+}
+
 .search-icon {
   position: absolute;
-  fill: rgba(0, 0, 0, 1);
+  top: 12px;
+  left: 16px;
+  /* fill: rgba(0, 0, 0, 1); */
 }
 
 .search-input {
+  margin: 0;
+  padding: 10px 191px 10px 48px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(0, 0, 0, 1);
-  /*цвет всё равно не применяется именно к инпуту. он не чёрный. */
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 50px 0 0 50px;
+}
+
+.search-label:focus-within {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.search-input:focus-visible {
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:disabled,
+.search-input:disabled + .search-icon {
+  opacity: 0.3;
 }
 
 .search-button {
-  margin-right: 26px;
+  padding: 10px 55px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-left: none;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+}
+
+.search-button-wrapper:focus-within {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+.search-button:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.search-button:active {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-button:disabled,
+.search-button:disabled:hover,
+.search-button:disabled:active {
+  opacity: 0.3;
+  cursor: auto;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*войти, выйти*/
@@ -1049,12 +1115,11 @@ body {
 }
 
 /* форма */
-.rare-title {
-  margin: 0;
-  margin-bottom: 42px;
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
+.rare {
+  width: 920px;
+  padding: 72px 80px;
+  border: 10px solid rgba(0, 0, 0, 1);
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .rare-form {
@@ -1071,6 +1136,12 @@ body {
 
 .rare-form-header {
   grid-column: 1 / 4;
+  flex-direction: row;
+  position: relative;
+}
+
+.rare-form-name {
+  grid-column: 1 / 2;
 }
 
 .rare-form-email {
@@ -1085,7 +1156,22 @@ body {
   grid-column: 3 / 4;
 }
 
+.rare-title {
+  margin: 0;
+  margin-bottom: 42px;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
 .form-close {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 2px;
+  right: 0;
+  background-color: transparent;
+  border: none;
   fill: rgba(0, 0, 0, 1);
 }
 
@@ -1115,9 +1201,35 @@ body {
   padding: 20px;
   font: inherit;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(240, 240, 240, 1);
+  background-color: rgba(240, 240, 240, 0.7);
   border: none;
+  outline: none;
+}
+
+.rare-input:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+
+.rare-input:hover {
+  background-color: rgba(240, 240, 240, 1);
+  outline: none;
+}
+
+.rare-input:disabled,
+.rare-input:disabled:hover {
+  opacity: 0.3;
+}
+
+.rare-input:invalid,
+.rare-input:focus:invalid {
+  outline: 2px solid rgba(255, 61, 61, 1);
+  outline-offset: 0;
+}
+
+.rare-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .button-rare-container {
@@ -1301,17 +1413,82 @@ body {
   color: #444444;
 }
 
+.subscription-form {
+  display: flex;
+}
+
 .subscription-input {
+  margin-right: 0;
+  width: 557px;
+  height: 57px;
+  padding: 11px 447px 14px 16px;
+  box-sizing: border-box;
   font-family: inherit;
-  color: #444444;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgba(196, 196, 196, 1);
+}
+
+.subscription-input:focus-visible {
+  background-color: rgba(220, 220, 220, 1);
+  outline: none;
+}
+
+.subscription-input:active {
+  background-color: transparent;
+  outline: none;
+}
+
+.subscription-input:invalid {
+  border-bottom: 3px solid rgba(255, 61, 61, 1);
+}
+
+.subscription-input:disabled {
+  border-bottom: 3px solid rgba(196, 196, 196, 1);
+  opacity: 0.3;
+}
+
+.subscription-input::placeholder {
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .subscription-button {
+  padding: 18px 39px;
+  width: 253px;
+  height: 57px;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  border: 3px solid rgba(196, 196, 196, 1);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.subscription-button:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.subscription-button:hover {
+  background-color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.subscription-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.subscription-button:disabled {
+  opacity: 0.3;
 }
 
 .subscription-advantage {
