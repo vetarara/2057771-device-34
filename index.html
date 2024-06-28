@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- нужно:
-1. удалить отступы У СПИСКОВ. -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -73,9 +71,7 @@
           <ul class="navigation-catalog-list">
             <li class="navigation-catalog-item">
               <button class="navigation-catalog-open" type="button">
-                <img class="navigation-catalog-open-icon" src="images/header/catalog-open.svg" width="50" height="50" alt="Раскрыть каталог товаров">
-                Каталог товаров
-              </button>
+                <img class="navigation-catalog-open-icon" src="images/header/catalog-open.svg" width="50" height="50" alt="Раскрыть каталог товаров">Каталог товаров</button>
               <ul class="navigation-subcatalog-list">
                 <li class="navigation-subcatalog-item">
                   <a class="navigation-subcatalog-link" href="#">Виртуальная реальность</a>
@@ -108,7 +104,7 @@
       </nav>
     </header>
 
-    <main class="main-container main-index"> <!--  main-container - класс, который отвечает за стики-футер -->
+    <main class="main-container main-index">
       <section class="popular">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="slide-number">
@@ -365,9 +361,8 @@
               <label class="rare-data" for="rare-order">Количество:
                 <span class="rare-data-icon"></span>
               </label>
-              <input class="rare-input" type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" disabled>
+              <input class="rare-input" type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" required>
             </p>
-            <!-- тут ещё нет количества! -->
             <span class="button-rare-container">
               <button class="button rare-button" type="submit">Отправить</button>
             </span>

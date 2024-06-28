@@ -519,9 +519,43 @@ body {
 
 .navigation-subcatalog-link {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: inherit;
   text-decoration: none;
+}
+
+.navigation-subcatalog-link:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.navigation-subcatalog-link:hover {
+  opacity: 0.7;
+  outline: none;
+}
+
+.navigation-subcatalog-link:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.navigation-subcatalog-link-current {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.navigation-subcatalog-link-current:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.navigation-subcatalog-link-current:hover {
+  opacity: 0.7;
+  outline: none;
+}
+
+.navigation-subcatalog-link-current:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 /* доставка - гарантия - контакты (навигация) */
@@ -1801,7 +1835,8 @@ body {
 
 .catalog-filter-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 35px;
+  padding: 25px 0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -1809,26 +1844,233 @@ body {
   text-transform: uppercase;
 }
 
+.catalog-filter-group {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.catalog-filter-group:first-child {
+  margin-bottom: 60px;
+}
+
+
 .catalog-filter-group-title {
+  padding-top: 12px;
+  padding-bottom: 20px;
   line-height: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-.control-input { /*эти стили, если их прописывать для инпут, не вступают в силу... пока пропущу формы фильтров*/
-  font-size: 16px;
-  line-height: 19px;
+.border-top-container {
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  top: -52px;
 }
 
+.border-top-container::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* Range */
+.range-scale {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: rgba(220, 220, 220, 1);
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:focus {
+  outline: none;
+}
+
+.range-toggle:focus-visible::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  outline: 2px solid rgba(175, 79, 255, 1);
+  pointer-events: none; /* Псевдоэлемент не будет мешать взаимодействию с input */
+}
+
+.range-toggle:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.range-toggle:active {
+  background-color: rgba(0, 0, 0, 1);
+  outline: none;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -9px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -9px;
+}
+
+.range-wrapper-inputs {
+  position: relative;
+  display: flex;
+}
+
+.catalog-filter-label {
+  position: absolute;
+  display: flex;
+  margin-right: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input:focus {
+  outline: none;
+}
+
+.catalog-filter-label:focus-within {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+/* Control */
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Mark */
+
+.control-mark-wrapper {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  border: 2px solid rgba(204, 204, 204, 1);
+  border-radius: 3px;
+}
+
+.control-input:focus-visible + .control-mark-wrapper {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.control-input:checked + .control-mark-wrapper > .control-mark {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input:disabled + .control-mark-wrapper > .control-mark,
+.control-input:disabled + .control-mark-wrapper + .control-label {
+  opacity: 0.1;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-wrapper > .control-mark::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url("../images/form/choose.svg");
+  background-repeat: no-repeat;
+}
+
+.control-input[type="radio"] + .control-mark-wrapper > .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark-wrapper > .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  content: "";
+}
+
+/*Каталог*/
 .right-column {
   flex-grow: 1;
 }
 
+/* Сортировка */
 .select {
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
-}
+  align-items: center;
+ }
 
 .select-title {
   margin: 0;
@@ -1840,24 +2082,47 @@ body {
   text-transform: uppercase;
 }
 
+.select-control {
+  width: 141px;
+  padding-right: 30px;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  background-image: url("../images/catalogue-navigation/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-control:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+  outline: none;
+}
+
+.select-control:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+
 .select-buttons {
   display: flex;
 }
 
 .button-up {
-  margin: 0 2px;
-  padding: 0 8px;
-  opacity: 0.2;
+  padding: 0 10px;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .button-down {
-  margin: 0 2px;
-  padding: 0 8px;
-  opacity: 0.2;
-}
-
-.select-button:focus {
-  outline: none;
+  padding: 0 10px;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .select-button:focus-visible {
@@ -1866,12 +2131,12 @@ body {
 }
 
 .select-button:hover {
-  opacity: 0.5;
+  fill: rgba(0, 0, 0, 0.5);
   outline: none;
 }
 
 .select-button:active {
-  opacity: 1;
+  fill: rgba(0, 0, 0, 1);
   outline: none;
 }
 
