@@ -180,12 +180,12 @@ body {
   position: absolute;
   top: 12px;
   left: 16px;
-  /* fill: rgba(0, 0, 0, 1); */
 }
 
 .search-input {
   margin: 0;
   padding: 10px 191px 10px 48px;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -194,7 +194,11 @@ body {
   border-radius: 50px 0 0 50px;
 }
 
-.search-label:focus-within {
+.search-label:focus-within { /* Мне не нравится, что когда поле в состоянии active, outline так и висит.
+  Но пока не понимаю, как это исправить: псевдокласс тут не работает по какой-то причине
+  .search-input:active {
+  outline: none;
+} тут не помогает */
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -224,7 +228,7 @@ body {
   cursor: pointer;
 }
 
-.search-button-wrapper:focus-within {
+.search-button-wrapper:focus-within { /* тут действительно проще сделать это через обёртку */
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -401,13 +405,92 @@ body {
   outline: none;
 }
 
-/* модальное окно корзины */
-.cart-item-link {
+/* поповер */
+.navigation-user-cart {
+  position: relative;
+}
+
+.popover {
+  position: absolute;
+  top: 40px;
+  right: -77px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 320px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  min-height: 90px;
+  display: none;
+}
+
+.popover::after {
+  position: absolute;
+  content: "";
+  width: 14px; /* ширина изображения */
+  height: 6px; /* высота изображения */
+  background-image: url("../images/header/popover-cart/triangle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: -5px;
+}
+
+.popover-open {
+  display: block;
+  /* Теперь мы можем добавлять или удалять класс для отображения и скрытия блока с корзиной. */
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.cart-item + .cart-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  ;
+}
+
+.cart-content {
+  display: flex;
+}
+
+.cart-item-image {
+  padding-right: 23px;
+}
+
+.cart-item-title {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
+  text-align: left;
   text-decoration: none;
 }
-/*возможно, правила выше и ниже можно задать для всего блока раскрытой корзины. посмотрим. */
+
+.cart-item-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-sum {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(26, 26, 26, 1);
+}
+
 .cart-quantity {
   font-size: 16px;
   line-height: 20px;
@@ -420,13 +503,24 @@ body {
   text-decoration: none;
 }
 
+.cart-open-link-wrapper {
+  padding: 20px;
+}
+
 .cart-open-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  min-height: 50px;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+  text-align: center;
 }
 
 /* каталог товаров - навигация */
