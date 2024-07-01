@@ -119,12 +119,14 @@ body {
   width: 1160px;
   margin: 0 auto;
   background-color: rgba(255, 225, 127, 1);
+  z-index: -2;
 }
 
 .inner-header {
   width: 1160px;
   margin: 0 auto;
   background-color: rgba(255, 225, 127, 1);
+  z-index: -2;
 }
 
 .logo {
@@ -351,6 +353,7 @@ body {
   left: 0;
   margin: auto;
   fill: rgba(0, 0, 0, 1);
+  z-index: -1;
 }
 
 /* корзина */
@@ -376,7 +379,6 @@ body {
   text-align: center;
   line-height: 21px;
   font-size: 14px;
-  z-index: 1;
 }
 
 /* состояния для сравнить и корзина */
@@ -1243,17 +1245,33 @@ body {
 }
 
 /* форма */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+  display: none;
+}
+
 .rare {
-  width: 920px;
-  padding: 72px 80px;
+  position: relative;
+  margin: auto;
+  max-width: 920px;
+  padding: 82px 90px;
   border: 10px solid rgba(0, 0, 0, 1);
   box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 0;
 }
 
 .rare-form {
-  display: grid;
-  grid-template-columns: 360px 180px 180px;
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+  row-gap: 42px; /* Вертикальный и горизонтальный отступы */
 }
 
 .field-group {
@@ -1263,25 +1281,28 @@ body {
 }
 
 .rare-form-header {
-  grid-column: 1 / 4;
-  flex-direction: row;
   position: relative;
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.rare-form-name {
-  grid-column: 1 / 2;
+.field-group-wrapper {
+  display: flex;
+  column-gap: 40px;
 }
 
+.rare-form-name,
 .rare-form-email {
-  grid-column: 2 / 4;
+  width: 360px;
 }
 
 .rare-form-product {
-  grid-column: 1 / 3;
+  width: 540px;
 }
 
 .rare-form-quantity {
-  grid-column: 3 / 4;
+  width: 180px;
 }
 
 .rare-title {
@@ -1369,8 +1390,6 @@ body {
 
 .rare-button {
   width: 200px;
-  grid-column: 1 / -1;
-  justify-self: start;
 }
 
 .rare-button::after {
