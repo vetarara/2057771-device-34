@@ -512,14 +512,24 @@
           <div class="field-group-wrapper">
             <p class="field-group rare-form-product">
               <label class="rare-data" for="rare-order">Что нужно привезти:</label>
-              <input class="rare-input" type="text" name="order" id="rare-order" placeholder="В свободной форме" required>
+              <input class="rare-input" type="text" name="order-description" id="rare-order" placeholder="В свободной форме" required>
             </p>
             <p class="field-group rare-form-quantity">
-              <label class="rare-data" for="rare-order">Количество:
-                <span class="rare-data-icon"></span>
-              </label>
-              <input class="rare-input" type="text" name="order" id="rare-order" placeholder="ПЕРЕДЕЛАТЬ!!" required>
-            </p>
+              <span class="rare-data form-label-icon">
+                <label class="rare-data" for="rare-order">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <span class="tooltip-icon"></span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.<br>Привезём сколько получится по требованиям<br>к провозу багажа.</span>
+                </span>
+              </span>
+              <span slass="rare-input-quantity">
+                <button class="rare-quantity decrease"></button>
+                <input class="rare-input rare-quantity-input" type="number" value="1" name="order-quantity" id="rare-order" required>
+                <button class="rare-quantity increase">+</button>
+              </span>
+              </p>
           </div>
           <div class="button-rare-container">
             <button class="button rare-button" type="submit">Отправить</button>
