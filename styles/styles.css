@@ -1583,7 +1583,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .rare-button::after {
-  top: 16px;
+  top: 15px;
   left: 0;
 }
 
