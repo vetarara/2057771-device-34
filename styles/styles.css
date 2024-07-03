@@ -1283,6 +1283,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .rare-form-header {
@@ -1319,14 +1320,36 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .form-close {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form-close-icon {
   position: absolute;
   width: 26px;
   height: 26px;
-  top: 2px;
+  top: 0;
   right: 0;
-  background-color: transparent;
-  border: none;
   fill: rgba(0, 0, 0, 1);
+}
+
+.form-close:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.form-close:hover .form-close-icon {
+  fill: rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+
+.form-close:active .form-close-icon {
+  fill: rgba(0, 0, 0, 0.3);
+  outline: none;
 }
 
 .rare-data {
@@ -1340,6 +1363,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .rare-input {
   margin: 0;
   padding: 20px;
+  padding-right: 38px;
   font: inherit;
   line-height: 20px;
   background-color: rgba(240, 240, 240, 0.7);
@@ -1347,11 +1371,10 @@ input[type="number"]::-webkit-inner-spin-button {
   outline: none;
 }
 
-.rare-input:focus {
+.rare-input:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
-
 
 .rare-input:hover {
   background-color: rgba(240, 240, 240, 1);
@@ -1373,11 +1396,23 @@ input[type="number"]::-webkit-inner-spin-button {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.rare-input-quantity {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.rare-input-icon {
+  position: absolute;
+  top: 58px;
+  left: 326px;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.rare-input:hover + .rare-input-icon {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.rare-input:disabled + .rare-input-icon {
+  fill: rgba(0, 0, 0, 0.1);
+}
+
+.rare-input:invalid + .rare-input-icon {
+  fill: rgba(0, 0, 0, 1);
 }
 
 .tooltip {
@@ -1385,14 +1420,21 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 26px;
   height: 26px;
   margin-left: 8px;
+  z-index: 2;
 }
 
 .tooltip-toggle {
   border: none;
+  width: 26px;
+  height: 26px;
   background-color: transparent;
   padding: 0;
   margin: 0;
   display: block;
+}
+
+.tooltip-toggle:focus-within {
+  outline: none;
 }
 
 .tooltip-icon {
@@ -1446,6 +1488,89 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-right: 26px;
 }
 
+.rare-input-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.rare-quantity {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgba(240, 240, 240, 1);
+  cursor: pointer;
+}
+
+.decrease {
+  z-index: 1;
+}
+
+.decrease::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  width: 16px;
+  height: 2px;
+  top: 29px;
+  left: 22px;
+}
+
+.increase::before,
+.increase::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  width: 16px;
+  height: 2px;
+  top: 29px;
+  right: 22px;
+}
+
+.increase::after {
+  transform: rotate(90deg);
+  bottom: 22px;
+  right: 22px;
+}
+
+.rare-quantity:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.rare-quantity:hover,
+.rare-quantity:active,
+.rare-quantity-input:focus-visible {
+  outline: none;
+}
+
+.decrease:hover::before,
+.increase:hover::before,
+.increase:hover::after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.decrease:active::before,
+.increase:active::before,
+.increase:active::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.rare-quantity-input {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  background-color: rgba(240, 240, 240, 1);
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .button-rare-container {
   position: relative;
   width: 200px;
@@ -1458,7 +1583,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .rare-button::after {
-  top: 15px;
+  top: 16px;
   left: 0;
 }
 
