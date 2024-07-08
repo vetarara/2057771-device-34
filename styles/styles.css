@@ -2417,7 +2417,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: block;
   width: 10px;
   height: 10px;
-  background-image: url("../images/form/choose.svg");
+  background-image: url("../images/catalog-navigation/check.svg");
   background-repeat: no-repeat;
 }
 
@@ -2469,7 +2469,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font: inherit;
   background-color: transparent;
   border: none;
-  background-image: url("../images/catalogue-navigation/select-arrow.svg");
+  background-image: url("../images/catalog-navigation/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 12px center;
   appearance: none;
