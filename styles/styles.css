@@ -142,6 +142,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: relative;
   top: -22px;
   left: 56px;
+  width: 145px;
 }
 
 .logo:focus {
@@ -1291,7 +1292,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* форма */
 .modal-container {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -2189,8 +2190,15 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .breadcrumbs-item {
-  margin-right: 6px;
-  padding-right: 16px;
+  margin-right: 16px;
+    padding-right: 20px;
+  background-image: url("../images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.breadcrumbs-item:last-child {
+  background-image: none;
 }
 
 .breadcrumbs-link {
