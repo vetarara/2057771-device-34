@@ -190,8 +190,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .search-input {
   margin: 0;
-  padding: 10px 123px 10px 48px;
+  width: 360px;
+  height: 40px;
   box-sizing: border-box;
+  padding-left: 48px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -223,7 +225,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .search-button {
-  padding: 10px 55px;
+  width: 160px;
+  height: 40px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -751,7 +754,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .popular {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -764,7 +767,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .slide-number-wrapper {
   width: 1040px;
-  height: 150px;
+  height: 125px;
+  /* RED */
   display: flex;
   justify-content: right;
   margin: 0 auto;
@@ -773,7 +777,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .slide-number-text {
   position: absolute;
-  top: 80px;
+  top: 55px;
+  /* RED */
   font-size: 180px;
   line-height: 30px;
   font-weight: 700; /* Толщина шрифта */
@@ -781,9 +786,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .popular-item {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-left: 30px;
+  top: -25px;
   display: flex;
   justify-content: space-between;
 }
@@ -794,7 +801,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .slider-controls {
   position: absolute;
-  top: 40%;
+  top: 210px;
+  right: 5px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -867,7 +875,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .popular-buttons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 
 .slider-pagination {
@@ -881,6 +889,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .slider-pagination-item {
   margin: 0 10px;
+  padding-top: 6px;
 }
 
 .slider-pagination-item:last-child {
@@ -944,16 +953,20 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .popular-table {
+  border: none;
   min-width: 156px;
-  border-spacing: 20px 12px;
+  border-collapse: collapse;
 }
 
 .popular-value {
+  padding-right: 20px;
+  padding-bottom: 12px;
   font-size: 36px;
   line-height: 30px;
 }
 
 .popular-parameter {
+  padding-right: 20px;
   font-size: 16px;
   color: #444444;
 }
@@ -962,7 +975,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .categories {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 64px;
 }
 
 .categories-list {
@@ -1077,18 +1090,16 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 1160px;
   margin: 0 auto;
   display: flex;
-  background-image: url("../images/service/courier.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
+  gap: 116px;
 }
 
 .service-buttons-container {
-  width: 287px;
-  margin-right: 116px;
+  min-width: 286px;
   padding: 64px 0 65px 0;
   display: grid;
   grid-row-gap: 35px;
   border-right: 7px solid rgba(0, 0, 0, 1);
+  box-sizing: border-box;
 }
 
 /* стили для обычных кнопок */
@@ -1181,9 +1192,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .service-description-container {
-  width: 873px;
-  margin: 0 auto;
-  padding: 72px 63px 78px 0;
+  width: 694px;
+  padding-top: 72px;
+  background-image: url("../images/service/courier.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .service-name {
@@ -1203,11 +1216,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ */
+.rare-preview {
+  margin-bottom: 77px;
+}
+
 .rare-delivery-link {
   display: flex;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 70px;
   padding: 0;
   justify-content: space-between;
   background-color: rgba(240, 240, 240, 1);
@@ -1552,7 +1568,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .decrease::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 1);
   width: 16px;
@@ -1634,13 +1650,14 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0 auto;
   margin-bottom: 70px;
   display: flex;
-  justify-content: space-between;
+  gap: 110px;
   color: #444444;
 }
 
 .about-delivery {
   position: relative;
   padding-top: 40px;
+  padding-right: 56px;
 }
 
 .about-delivery .line-container {
@@ -1801,7 +1818,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
 }
 
-.button-connection::after{
+.button-connection::after {
   top: 6px;
 }
 
@@ -1821,16 +1838,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .subscription-title {
-  margin-top: 0;
-  margin-right: 252px;
-  margin-bottom: 144px;
+  margin: 0 232px 144px 10px;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
 }
 
 .subscription-description {
-  margin: 0;
+  margin: 10px 30px 0 0;
   padding: 0;
   color: #444444;
 }
@@ -1936,13 +1951,13 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 1160px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   position: relative;
 }
 
 .logo-footer {
   display: block;
   width: 145px;
+  margin-bottom: 30px;
 }
 
 .logo-footer:focus {
@@ -1969,8 +1984,12 @@ input[type="number"]::-webkit-inner-spin-button {
   font-style: normal;
 }
 
+.footer-physical-address {
+  margin-right: 124px;
+}
+
 .footer-physical-address .line-container {
-  bottom: 0;
+  bottom: 16px;
 }
 
 .footer-physical-address .line-container::after {
@@ -1978,7 +1997,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .footer-navigation {
+  margin-right: 176px;
   padding-top: 75px;
+  width: 444px;
 }
 
 .footer-service-list {
@@ -2004,7 +2025,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
 }
 
 .footer-service-link:focus {
@@ -2191,7 +2212,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .breadcrumbs-item {
   margin-right: 16px;
-    padding-right: 20px;
+  padding-right: 20px;
   background-image: url("../images/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position: right center;
@@ -2421,7 +2442,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark-wrapper > .control-mark::before {
-  content: '';
+  content: "";
   display: block;
   width: 10px;
   height: 10px;
