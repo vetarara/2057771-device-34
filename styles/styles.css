@@ -34,6 +34,7 @@ html {
 }
 
 body {
+  min-width: 1440px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,6 +383,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
@@ -421,7 +423,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   top: 5px;
   left: 0;
-  width: 21px;
+  min-width: 21px;
   height: 21px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
@@ -694,6 +696,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .navigation-catalog-item {
   position: relative;
+  min-width: 294px;
 }
 
 .navigation-subcatalog-list {
@@ -836,10 +839,16 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: flex-end;
   list-style-type: none;
+}
+
+.navigation-info-item {
+  margin-right: 32px;
+}
+
+.navigation-info-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .navigation-info-link {
@@ -853,6 +862,10 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+}
+
+.navigation-info-item:nth-child(3n) .navigation-info-link {
+  margin-right: 0;
 }
 
 .navigation-info-link:focus {
@@ -1025,6 +1038,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slider-pagination {
+  max-width: 760px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1132,12 +1146,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .categories-list {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(6, 160px);
   list-style-type: none;
 }
 
@@ -1873,6 +1884,8 @@ input[type="number"]::-webkit-inner-spin-button {
   position: relative;
   padding-top: 40px;
   padding-right: 56px;
+  min-width: 520px;
+  box-sizing: border-box;
 }
 
 .about-delivery .line-container {
@@ -2368,6 +2381,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .footer-contact {
+  margin-left: auto;
   padding-top: 78px;
 }
 
@@ -2413,7 +2427,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .logo-htmlacademy {
   position: absolute;
-  left: 60px;
+  right: 0;
   display: block;
   fill: rgba(255, 199, 0, 1);
 }
@@ -2465,6 +2479,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
@@ -2520,7 +2535,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .catalog-filter-group {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   padding: 0;
   border: none;
   position: relative;
@@ -2531,29 +2546,31 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .catalog-filter-group-title {
-  padding-top: 12px;
-  padding-bottom: 20px;
+  margin-bottom: 18px;
   line-height: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-.border-top-container {
-  position: absolute;
-  width: 200px;
-  height: 2px;
-  top: -52px;
+.catalog-filter-group-title:first-child {
+  margin-bottom: 30px;
 }
 
 .border-top-container::before {
   content: "";
   display: block;
+  margin-bottom: 14px;
   width: 200px;
   height: 2px;
   background-color: rgba(0, 0, 0, 1);
 }
 
 /* Range */
+.range {
+  max-width: 200px;
+  padding-bottom: 32px;
+}
+
 .range-scale {
   position: relative;
   width: 200px;
@@ -2812,6 +2829,8 @@ input[type="number"]::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .button-up {
@@ -2956,10 +2975,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .pagination {
+  max-width: 760px;
   margin-bottom: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2972,10 +2993,15 @@ input[type="number"]::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.pagination-item {
+  margin-bottom: 2px;
 }
 
 .pagination-button {
@@ -3012,8 +3038,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .pagination-link {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
