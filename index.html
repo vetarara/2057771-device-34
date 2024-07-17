@@ -87,7 +87,6 @@
                 <img class="navigation-catalog-open-icon" src="images/header/catalog-open.svg" width="50" height="50" alt="Раскрыть каталог товаров">
                 <img class="navigation-catalog-open-icon-unactive" src="images/header/catalog-active.svg" width="50" height="50" alt="Закрыть каталог товаров">
                 Каталог товаров</button>
-
               <ul class="navigation-subcatalog-list">
                 <li class="navigation-subcatalog-item virtual-reality">
                   <a class="navigation-subcatalog-link" href="#">Виртуальная реальность</a>
@@ -126,7 +125,7 @@
             <span class="slide-number-text slide-number-text-current">01</span>
           </div>
         </div>
-        <div class="popular-item">
+        <div class="popular-item ">
           <div class="slider">
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <img class="slider-image" src="images/slider/quadcopter.png" width="530" height="560" alt="Чёрно-белый квадрокоптер с лазером">
@@ -184,43 +183,122 @@
             </table>
           </div>
         </div>
-        <!-- ЗАКОММЕНТИРОВАНО, ЧТОБЫ ПОНЯТЬ, КАК РАССТАВИТЬ ХОТЯ БЫ ОДИН popular-item!
-        <div class="popular-item">
-          <h3 class="visually-hidden">Фитнес-браслет</h3>
-          <img class="popular-image" src="images/slider/fitness-bracelet.png" width="530" height="560" alt="Чёрный фитнес-браслет с надписью: Я вижу, что ты снова ешь :(">
-          <p class="popular-slogan"><b>Худеем<br>правильно!</b></p>
-          <p class="popular-description">Мотивирующие фитнес-браслеты помогут найти в себе<br>силы не пропускать занятия и соблюдать диету.</p>
-          <a class="button popular-link" href="#">Подробнее</a>
-          <table class="popular-table">
-            <tr>
-              <td class="popular-value">48 часов</td>
-            </tr>
-            <tr>
-              <td class="popular-parameter">Без подзарядки</td>
-            </tr>
-          </table>
+        <div class="popular-item popular-item-unactive">
+          <div class="slider">
+            <h3 class="visually-hidden">Фитнес-браслет</h3>
+            <img class="slider-image" src="images/slider/fitness-bracelet.png" width="530" height="560" alt="Чёрный фитнес-браслет с надписью: Я вижу, что ты снова ешь и грустным смайликом">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <svg class="slider-button-prev" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z"/></svg>
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <svg class="slider-button-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"/></svg>
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+          </div>
+          <div class="popular-container">
+            <p class="popular-slogan"><b>Худеем<br>правильно!</b></p>
+            <p class="popular-description">Мотивирующие фитнес-браслеты помогут найти в себе<br>силы не пропускать занятия и соблюдать диету.</p>
+            <div class="popular-buttons">
+              <span class="button-container">
+                <a class="button popular-link" href="#">Подробнее</a>
+              </span>
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="slider-pagination-button-circle">
+                      <span class="visually-hidden">1 фото</span>
+                    </span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="slider-pagination-button-circle slider-pagination-button-circle-current">
+                      <span class="visually-hidden">2 фото</span>
+                    </span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="slider-pagination-button-circle">
+                      <span class="visually-hidden">3 фото</span>
+                    </span>
+                  </button>
+                </li>
+              </ol>
+            </div>
+            <table class="popular-table">
+              <tr>
+                <td class="popular-value">48 часов</td>
+              </tr>
+              <tr>
+                <td class="popular-parameter">Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
         </div>
-
-        <div class="popular-item">
-          <h3 class="visually-hidden">Длинная селфи-палка</h3>
-          <img class="popular-image" src="images/slider/selfie-stick.png" width="530" height="560" alt="Три чёрные селфи-палки с синими элементами">
-          <p class="popular-slogan"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
-          <p class="popular-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-          <a class="button popular-link" href="#">Подробнее</a>
-          <table class="popular-table">
-            <tr>
-              <td class="popular-value">8,5 м</td>
-              <td class="popular-value">5 кг</td>
-              <td class="popular-value">Карбон</td>
-            </tr>
-            <tr>
-              <td class="popular-parameter">Длина палки</td>
-              <td class="popular-parameter">Вес палки</td>
-              <td class="popular-parameter">Материал</td>
-            </tr>
-          </table>
+        <div class="popular-item popular-item-unactive">
+          <div class="slider">
+            <h3 class="visually-hidden">Длинная селфи-палка</h3>
+            <img class="slider-image" src="images/slider/selfie-stick.png" width="530" height="560" alt="Три чёрные селфи-палки с синими элементами">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <svg class="slider-button-prev" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z"/></svg>
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <svg class="slider-button-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"/></svg>
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+          </div>
+          <div class="popular-container">
+            <p class="popular-slogan"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
+            <p class="popular-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <div class="popular-buttons">
+              <span class="button-container">
+                <a class="button popular-link" href="#">Подробнее</a>
+              </span>
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="slider-pagination-button-circle">
+                      <span class="visually-hidden">1 фото</span>
+                    </span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="slider-pagination-button-circle">
+                      <span class="visually-hidden">2 фото</span>
+                    </span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="slider-pagination-button-circle slider-pagination-button-circle-current">
+                      <span class="visually-hidden">3 фото</span>
+                    </span>
+                  </button>
+                </li>
+              </ol>
+            </div>
+            <table class="popular-table">
+              <tr>
+                <td class="popular-value">8,5 м</td>
+                <td class="popular-value">5 кг</td>
+                <td class="popular-value">Карбон</td>
+              </tr>
+              <tr>
+                <td class="popular-parameter">Длина палки</td>
+                <td class="popular-parameter">Вес палки</td>
+                <td class="popular-parameter">Материал</td>
+              </tr>
+            </table>
+          </div>
         </div>
--->
       </section>
       <section class="categories">
         <h2 class="visually-hidden">Категории</h2>
@@ -294,8 +372,8 @@
               бесплатно! Ведь<br>
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <!--
-          ГАРАНТИЯ
+        </div>
+        <div class="service-container service-container-unactive">
           <div class="service-buttons-container">
             <div class="service-button-container">
               <button class="service-button" type="button">Доставка</button>
@@ -309,11 +387,11 @@
           </div>
           <div class="service-description-container">
             <h3 class="service-name">Гарантия</h3>
-            <p class="service-description">Если из-за возгорания купленного у нас товара у вас<br>сгорит дом — не переживайте, мы выдадим вам новый.<br>
+            <p class="service-description">Если из-за возгорания купленного у нас товара у вас<br>сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
           </div>
-
-          КРЕДИТ
+        </div>
+        <div class="service-container service-container-unactive">
           <div class="service-buttons-container">
             <div class="service-button-container">
               <button class="service-button" type="button">Доставка</button>
@@ -329,8 +407,6 @@
             <h3 class="service-name">Кредит</h3>
             <p class="service-description">Залезть в долговую яму стало проще! Кредитные <br>консультанты подберут для вас наиболее выгодные <br>условия кредита. Выгодные для банка, разумеется.</p>
           </div>
-
-          -->
         </div>
       </section>
       <section class="rare-preview">

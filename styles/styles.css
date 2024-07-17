@@ -877,6 +877,10 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 
+.popular-item-unactive {
+  display: none;
+}
+
 .slider {
   position: relative;
 }
@@ -1177,6 +1181,10 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 116px;
 }
 
+.service-container-unactive {
+  display: none;
+}
+
 .service-buttons-container {
   min-width: 286px;
   padding: 64px 0 65px 0;
@@ -1281,6 +1289,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: url("../images/service/courier.svg");
   background-repeat: no-repeat;
   background-position: right center;
+  /* Тут в зависимости от выбранного раздела (Доставка, Гарантия или Кредит) фоновое изображение должно меняться. Изображения есть в папке service. */
 }
 
 .service-name {
