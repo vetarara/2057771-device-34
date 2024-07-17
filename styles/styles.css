@@ -2,6 +2,13 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
@@ -36,13 +43,8 @@ html {
 body {
   min-width: 1440px;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100%;
   padding-top: 40px;
   font-family: "Rubik", sans-serif;
@@ -179,8 +181,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .user-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1040px;
   margin: 0 auto;
@@ -188,16 +188,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
 }
 
 .search-label {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   position: relative;
 }
 
@@ -211,8 +207,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
   width: 360px;
   height: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-left: 48px;
   font-family: inherit;
   font-size: 16px;
@@ -233,22 +228,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .search-input:focus-visible {
   outline: none;
-}
-
-.search-input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.search-input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.search-input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.search-input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-input::placeholder {
@@ -305,11 +284,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .navigation-login-list {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style-type: none;
   max-width: 250px;
 }
@@ -380,8 +356,6 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
   margin-left: auto;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -471,8 +445,7 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 40px;
   right: -77px;
   z-index: 2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 320px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
@@ -508,15 +481,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .cart-item {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .cart-item + .cart-item {
@@ -524,8 +491,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cart-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -555,12 +520,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .cart-sum {
   padding: 12px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   background-color: rgba(26, 26, 26, 1);
 }
 
@@ -581,15 +542,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cart-open-link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-width: 280px;
   min-height: 50px;
   font-family: "Raleway", sans-serif;
@@ -608,8 +563,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cart-open-link:hover {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 3px solid rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
@@ -625,12 +579,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .navigation-container {
   width: 1040px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .navigation-catalog-list {
@@ -707,21 +657,15 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 1160px;
   height: 174px;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   padding-left: 60px;
   padding-top: 14px;
   padding-bottom: 54px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 211px 40px 211px 40px 211px;
   grid-template-columns: repeat(3, 211px); /* Создаем 3 колонки одинаковой ширины */
-  -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
+  column-gap: 40px;
   position: absolute;
   top: 56px;
   left: -60px;
@@ -834,11 +778,8 @@ input[type="number"]::-webkit-inner-spin-button {
   min-width: 472px;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: flex-end;
   list-style-type: none;
 }
@@ -888,9 +829,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .main-container {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 /*Раздел популярных товаров*/
@@ -912,12 +851,8 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 1040px;
   height: 125px;
   /* RED */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
   margin: 0 auto;
   position: relative;
 }
@@ -938,12 +873,8 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0;
   padding-left: 30px;
   top: -25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .slider {
@@ -955,12 +886,8 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 210px;
   right: 5px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .slider-image {
@@ -1028,25 +955,16 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .popular-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 
 .slider-pagination {
   max-width: 760px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  flex-wrap: wrap;
+  justify-content: right;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1155,7 +1073,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .categories-link {
   max-width: 160px;
   padding-bottom: 18px;
-  display: -ms-grid;
   display: grid;
   gap: 32px;
   font-family: "Raleway", sans-serif;
@@ -1256,8 +1173,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .service-container {
   width: 1160px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 116px;
 }
@@ -1265,12 +1180,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .service-buttons-container {
   min-width: 286px;
   padding: 64px 0 65px 0;
-  display: -ms-grid;
   display: grid;
   grid-row-gap: 35px;
   border-right: 7px solid rgba(0, 0, 0, 1);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* стили для обычных кнопок */
@@ -1392,15 +1305,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .rare-delivery-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   background-color: rgba(240, 240, 240, 1);
   text-decoration: none;
   color: inherit;
@@ -1500,52 +1409,35 @@ input[type="number"]::-webkit-inner-spin-button {
   max-width: 920px;
   padding: 82px 90px;
   border: 10px solid rgba(0, 0, 0, 1);
-  -webkit-box-shadow: 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 1);
   z-index: 1;
 }
 
 .rare-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 760px;
   row-gap: 42px; /* Вертикальный и горизонтальный отступы */
 }
 
 .field-group {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
 }
 
 .rare-form-header {
   position: relative;
   width: 760px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .field-group-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
+  column-gap: 40px;
 }
 
 .rare-form-name,
@@ -1642,22 +1534,6 @@ input[type="number"]::-webkit-inner-spin-button {
   outline-offset: 0;
 }
 
-.rare-input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.rare-input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.rare-input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.rare-input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .rare-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1721,16 +1597,14 @@ input[type="number"]::-webkit-inner-spin-button {
   left: -135px;
   width: 200px;
   min-height: 160px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 19px 17px 0 19px;
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
   display: none;
 }
 
@@ -1757,19 +1631,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .rare-input-quantity {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 
@@ -1777,8 +1642,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 60px;
   height: 60px;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   background-color: rgba(240, 240, 240, 1);
   cursor: pointer;
@@ -1810,9 +1674,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .increase::after {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   bottom: 22px;
   right: 22px;
 }
@@ -1843,8 +1705,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .rare-quantity-input {
   width: 60px;
   height: 60px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   border: none;
   background-color: rgba(240, 240, 240, 1);
@@ -1873,8 +1734,6 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 110px;
   color: #444444;
@@ -2060,14 +1919,9 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .subscription-title {
@@ -2084,8 +1938,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .subscription-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -2094,8 +1946,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 557px;
   height: 57px;
   padding: 11px 447px 14px 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
@@ -2123,22 +1974,6 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: 0.3;
 }
 
-.subscription-input::-webkit-input-placeholder {
-  color: rgba(68, 68, 68, 0.5);
-}
-
-.subscription-input::-moz-placeholder {
-  color: rgba(68, 68, 68, 0.5);
-}
-
-.subscription-input:-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.5);
-}
-
-.subscription-input::-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.5);
-}
-
 .subscription-input::placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
@@ -2147,8 +1982,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 18px 39px;
   width: 253px;
   height: 57px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -2203,8 +2037,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .footer-container {
   width: 1160px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -2261,12 +2093,8 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
   margin-bottom: 62px;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   list-style-type: none;
 }
 
@@ -2319,14 +2147,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .footer-social-list {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
 }
 
@@ -2461,8 +2284,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0 auto;
   margin-bottom: 28px;
   padding-left: 60px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .inner-header-title {
@@ -2476,8 +2298,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .breadcrumbs-list {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -2510,16 +2330,13 @@ input[type="number"]::-webkit-inner-spin-button {
 .catalog-container {
   width: 1160px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .catalog-filter {
   width: 320px;
   padding-left: 60px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .catalog-filter-title {
@@ -2632,8 +2449,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .range-wrapper-inputs {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 15px;
   line-height: 18px;
@@ -2641,8 +2456,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .catalog-filter-label {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 5px;
   color: rgba(0, 0, 0, 0.3);
@@ -2656,7 +2469,6 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: transparent;
   border: none;
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
           appearance: textfield;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -2765,23 +2577,15 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /*Каталог*/
 .right-column {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 /* Сортировка */
 .select {
   padding: 20px 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .select-title {
@@ -2804,7 +2608,6 @@ input[type="number"]::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position: right 12px center;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   cursor: pointer;
 }
@@ -2826,8 +2629,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 .select-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -2871,9 +2672,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .product-list {
   margin: 0;
   padding: 0;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 360px 40px 360px;
   grid-template-columns: 360px 360px;
   gap: 40px;
   list-style-type: none;
@@ -2890,17 +2689,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .product-card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .product-card-title {
@@ -2977,27 +2769,19 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination {
   max-width: 760px;
   margin-bottom: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   background-color: rgba(235, 235, 235, 1);
 }
 
 .pagination-list {
   margin: 0;
   padding: 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .pagination-item {
@@ -3040,14 +2824,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination-link {
   min-width: 40px;
   min-height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
